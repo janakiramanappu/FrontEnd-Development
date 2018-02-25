@@ -1,2 +1,4 @@
 # hello-world1
-just another repository
+
+Hi buddy
+I want to do some creative things.
