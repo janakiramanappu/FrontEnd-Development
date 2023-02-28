@@ -17,7 +17,7 @@
     <!-- paragrapg has p tag -->
     <p>Paragraph</p>
 
-    <!-- Some additions tags like bold (b or strong), italic (i or em-emphasized), underline (u), delete (del) -->
+    <!-- Some additions tags like bold (b or strong), italic (i or em-emphasized), underline (u), delete (del), sup (superscript), sub (subscript) -->
     <p>Lorem ipsum
         <b>dolor sit</b> amet consectetur
         <strong>adipisicing elit.</strong> Expedita, quod.
@@ -32,6 +32,132 @@
     <p>Lorem ipsum
         <del>dolor sit amet, consectetur adipisicing elit.</del> Sequi, quia!
     </p>
+    <p>Lorem ipsum
+        <sup>dolor sit amet consectetur adipisicing elit.</sup> Dicta, accusantium?
+    </p>
+    <p>Lorem ipsum
+        <sub>dolor sit amet consectetur adipisicing elit.</sub> Quisquam, nam.
+    </p>
+
+    <!-- Anchor tag defines hyperlink with some reference links on the href attributes -->
+    <a href="https://www.google.com">Google</a>
+
+    <br>
+    <br>
+
+    <!-- Image tag will set width and height attributes -->
+    <img src="/NatureWallpaper.png" alt="Nature Wallpaper" width="400">
+
+    <br>
+    <br/>
+
+    <!-- Link to an Image -->
+    <a href="https://www.google.com">
+        <img src="./NatureWallpaper.png" alt="Nature wallpaper" width="300" height="300">
+    </a>
+
+    <!-- Contains Unordered list (ul), Ordered list (ol), Description list (dl) - 
+    Description term (dt) & Description details (dd) -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <dl>
+        <dt>Item 1</dt>
+        <dd>Item 1 Description data</dd>
+        <dt>Item 2</dt>
+        <dd>Item 2 Description data</dd>
+        <dt>Item 3</dt>
+        <dd>Item 3 Description data</dd>
+    </dl>
+
+    <!-- Nested Lists means 
+        inside ul we have ol & dl,
+        inside ol we have ul & ul,
+        inside dl we have ol & ul
+    same as vice-versa -->
+    <ul>
+        <li>Item 1</li>
+        <ol>
+            <li>Item 1.1</li>
+            <li>Item 1.2</li>
+            <li>Item 1.3</li>
+        </ol>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <dl>
+            <dt>Item 3.1</dt>
+            <dd>Item 3 Description data</dd>
+            <dt>Item 3.2</dt>
+            <dd>Item 3.2 Description data</dd>
+        </dl>
+    </ul>
+    <dl>
+        <dt>Item 1</dt>
+        <dd>Item 1 Description data</dd>
+        <ul>
+            <li>Item 1.1</li>
+            <li>Item 1.2</li>
+        </ul>
+        <dt>Item 2</dt>
+        <dd>Item 2 Description data</dd>
+    </dl>
+
+    <!-- Table tag have table heading, table row, table data -->
+    <!-- border attribute defines how the table border will look like for each cell rows & columns -->
+    <!-- border-collapse will avoid double borders and make it into a single border -->
+    <table border="1" style="border-collapse:collapse;border:5px inset lightskyblue;">
+        <tr>
+            <th style="color:orange;background: black;">Item 1</th>
+            <th>Item 2</th>
+            <th>Item 3</th>
+        </tr>
+        <tr style="background-color:lightcoral;">
+            <td>Item 1.1</td>
+            <td>Item 2.1</td>
+            <td>Item 3.1</td>
+        </tr>
+        <tr>
+            <td>Item 1.2</td>
+            <td>Item 2.2</td>
+            <td style="font-family: monospace;font-size: 20px;font-style: italic;">Item 3.2</td>
+        </tr>
+    </table>
+
+    <br/>
+    <br>
+
+    <!-- Form Validation -->
+    <form>
+        <label for="username">Name:</label>
+        <input type="text" name="username">
+        <p>Password:
+            <input type="password" name="password">
+        </p>
+        <p>Age:
+            <input type="number" name="age" value="age">
+        </p>
+        <label for="dishes">Select your fav food</label>
+        <input type="checkbox" name="dishes" id="poori" value="poori"> Poori
+        <input type="checkbox" name="dishes" id="rice" value="rice"> Rice
+        <input type="checkbox" name="dishes" id="dosa" value="dosa"> Dosa
+        <input type="checkbox" name="dishes" id="roast" value="roast"> Roast
+        <br>
+        <br/>
+        <label for="bikes">Select an option which bike you are having currently</Label>
+        <input type="radio" name="bikes" id="yamaha" value="yamaha"> Yamaha
+        <input type="radio" name="bikes" id="honda" value="honda"> Honda
+        <input type="radio" name="bikes" id="splendor" value="splendor"> Splendor
+        <br>
+        <br>
+        <input type="submit" value="Hit Enter">
+    </form>
 
 </body>
 <!-- End body tag -->
