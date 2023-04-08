@@ -1,4 +1,8 @@
 <!-- This denotes the html type of document -->
+<!-- less than sign or symbol(<) - Opening tag and greater than sign or symbol(>) - Closing tag  -->
+<!-- Some of the tags which doesn't require closing tag they are called as Singleton or Void Elements -->
+<!-- Self-closing tags (combined into opening and closing tags) in HTML are sometimes also known as empty tags, void tags, singletons tags, etc. This means that these
+tags have no content and cannot have any children. They only have attributes -->
 <!DOCTYPE html>
 <html>
 
@@ -7,6 +11,7 @@
 
 <body>
     <!-- heading has 6 tags like h1,h2,h3,h4,h5,h6 -->
+    <!-- Block level elements - <h1>,<h2>,<h3>,<h4>,<h5>,<h6>,<p> -->
     <h1 style="background-color:red;color:blue;font-family:courier; text-align: center;">Heading1</h1>
     <h2>Heading2</h2>
     <h3>Heading3</h3>
@@ -14,7 +19,7 @@
     <h5>Heading5</h5>
     <h6>Heading6</h6>
 
-    <!-- paragrapg has p tag -->
+    <!-- paragraph has p tag -->
     <p>Paragraph</p>
 
     <!-- Some additions tags like bold (b or strong), italic (i or em-emphasized), underline (u), delete (del), sup (superscript), sub (subscript) -->
@@ -40,20 +45,21 @@
     </p>
 
     <!-- Anchor tag defines hyperlink with some reference links on the href attributes -->
+    <!-- Inline elements - <a>, <img>, <label>, <input>, <span> -->
     <a href="https://www.google.com">Google</a>
 
     <br>
     <br>
 
     <!-- Image tag will set width and height attributes -->
-    <img src="/NatureWallpaper.png" alt="Nature Wallpaper" width="400">
+    <img src="assets/images/NatureWallpaper.png" alt="Nature Wallpaper" width="400">
 
     <br>
     <br/>
 
     <!-- Link to an Image -->
     <a href="https://www.google.com">
-        <img src="./NatureWallpaper.png" alt="Nature wallpaper" width="300" height="300">
+        <img src="assets/images/NatureWallpaper.png" alt="Nature wallpaper" width="300" height="300">
     </a>
 
     <!-- Contains Unordered list (ul), Ordered list (ol), Description list (dl) - 
@@ -79,7 +85,7 @@
 
     <!-- Nested Lists means 
         inside ul we have ol & dl,
-        inside ol we have ul & ul,
+        inside ol we have ul & dl,
         inside dl we have ol & ul
     same as vice-versa -->
     <ul>
@@ -112,6 +118,7 @@
     <!-- Table tag have table heading, table row, table data -->
     <!-- border attribute defines how the table border will look like for each cell rows & columns -->
     <!-- border-collapse will avoid double borders and make it into a single border -->
+    <!-- border property have border-width, border-style, border-color -->
     <table border="1" style="border-collapse:collapse;border:5px inset lightskyblue;">
         <tr>
             <th style="color:orange;background: black;">Item 1</th>
@@ -137,17 +144,24 @@
     <form>
         <label for="username">Name:</label>
         <input type="text" name="username">
+        <label for="usern">Uname:</label>
+        <input type="text" name="usern">
         <p>Password:
             <input type="password" name="password">
         </p>
         <p>Age:
             <input type="number" name="age" value="age">
         </p>
-        <label for="dishes">Select your fav food</label>
-        <input type="checkbox" name="dishes" id="poori" value="poori"> Poori
-        <input type="checkbox" name="dishes" id="rice" value="rice"> Rice
-        <input type="checkbox" name="dishes" id="dosa" value="dosa"> Dosa
-        <input type="checkbox" name="dishes" id="roast" value="roast"> Roast
+        <label for="dishes">Select your fav foods</label>
+        <p>Select your fav foods</p>
+        <input type="checkbox" name="dishes" id="poori" value="Poori">
+        <label for="poori">Poori</label>
+        <input type="checkbox" name="dishes" id="rice" value="Rice">
+        <label for="rice">Rice</label>
+        <input type="checkbox" name="dishes" id="dosa" value="Dosa">
+        <label for="dosa">Dosa</label>
+        <input type="checkbox" name="dishes" id="roast" value="Roast">
+        <label for="roast">Roast</label>
         <br>
         <br/>
         <label for="bikes">Select an option which bike you are having currently</Label>

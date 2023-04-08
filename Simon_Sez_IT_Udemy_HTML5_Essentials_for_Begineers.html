@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Once the application loads, time page refresh at a given set interval (every 10 seconds) and redirect users to the different url webpage
+    after a set delay (10 seconds) -->
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <!-- <meta http-equiv="refresh" content="10;https://www.google.com"> -->
+
+    <title>HTML5 Essentials for Begineers</title>
+    <style>
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: lightcoral;
+        }
+
+        /* main {
+            height: 300px;
+            background: lightcyan;
+        } */
+
+        /* section {
+            background: wheat;
+            width: 50%;
+            height: 100px;
+        } */
+
+        /* .firstSection {
+            display: flex;
+            width: 50%;
+            height: 100px;
+            background: wheat;
+        } */
+
+        /* .secondSection {
+            display: flex;
+            float: right;
+            background: tomato;
+            height: 100px;
+            width: 50%;
+        } */
+
+        /* article {
+            background: violet;
+            width: 50%;
+            height: 100px;
+        } */
+
+        /* aside {
+            background: tomato;
+            float: right;
+            width: 50%;
+            height: 300px;
+        } */
+
+        footer {
+            height: 100px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<!-- oncontextmenu attribute will disable the user right clicks -->
+<!-- <body oncontextmenu="return false"> -->
+
+<body>
+
+    <header>
+        This is my header
+        <nav style="display: flex; margin: 0px 10px;">
+            <nav style="margin-right: 0px;">Nav1</nav>
+            <nav style="margin-right: 0px;">Nav2</nav>
+            <nav>Nav3</nav>
+        </nav>
+    </header>
+    <!-- Main tag element should come only once at a time in a document -->
+    <!-- must not include more than one main element in a document -->
+    <main style="display: flex;">
+        <!-- <section>This is my main section</section> -->
+        <section style="width: 50%; background: lightcyan;">
+            <h3>This is my first parent section - Left hand side is the entire main section</h3>
+            <section class="firstHalf">
+                <section class="firstSection">
+                    <h4>This is my first child section</h4>
+                    <article>
+                        <h5>This is my article</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus modi placeat minima voluptas
+                            libero,
+                            <mark>laboriosam vitae</mark>, repudiandae vel tempora quod saepe sed, facere dicta temporibus id fugiat
+                            sint itaque eos iste possimus dolorum aliquid. Quas, unde? Voluptatem molestias illo iste.</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <section style="width: 50%; background-color: lavender;">
+            <h3>This is my second parent section - Right hand side is the entire aside section</h3>
+            <section class="secondHalf">
+                <section class="secondSection">
+                    <h4>This is my second child section</h4>
+                    <aside>
+                        <h5>This is my aside</h5>
+                        <figure>
+                            <img src="assets/images/NatureWallpaper.png" alt="nature wallpaper" width="50%">
+                            <time datetime="15-03-2023" pubdate>07:31 AM</time>
+                            <figcaption>Picture of Nature</figcaption>
+                        </figure>
+                    </aside>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        This is my footer
+    </footer>
+
+    <details>
+        <summary>List of Items</summary>
+        <p>Item-1</p>
+        <p>Item-2</p>
+        <p>Item-3</p>
+    </details>
+    <details open>
+        <summary>Fruits List</summary>
+        <p>Apple</p>
+        <p>Orange</p>
+        <p>Banana</p>
+    </details>
+    <details></details>
+    <details open>
+        <p>List-1</p>
+        <p>List-2</p>
+        <p>List-3</p>
+    </details>
+
+    <!-- Form -->
+    <form action="test.php" method="post" autocomplete="on">
+        <!-- autocomplete - fill in the form then refresh to see autocomplete work and 
+            if autocomplete is in form then name attribute is must for input tag then only it can show the previous
+        typed results -->
+        <fieldset>
+            <legend>Google Form</legend>
+
+            <!-- Add voice recognition - works only in mobile devices lollipop only google chrome
+            this type does not work there is a JS API used for voice recognition -->
+            <!-- <input type="text" x-webkit-speech> -->
+            <!-- XHTML like syntax -->
+            <!-- <input type="text" x-webkit-speech="x-webkit-speech"> -->
+
+            <!-- Capturing the user camera - image and video -->
+            <input type="file" capture="environment" accept="video/*">
+            <input type="file" capture="user" accept="image/*">
+            <input type="file">
+            <input type="file" multiple>
+            <!-- multiple attribute accepts multiple files to upload -->
+            <br>
+            <br>
+
+            <label>text:</label>
+            <input type="text" name="text" placeholder="Type your text" autofocus>
+            <!-- autofocus - form is automatically focused on an input field when page loads -->
+            <br>
+            <br>
+            <div>
+                <label>password:</label>
+                <input type="password">
+            </div>
+            <br>
+            <!-- you can change the default color with a hex color value such as value="#ffa500" -->
+            <label>color:</label>
+            <input type="color" name="color-box" value="#ffa500">
+            <br>
+            <br>
+            <!-- you can add a default date (year-month-day) using the value attribute. Example: value="2023-01-01" -->
+            <label>date:</label>
+            <input type="date" value="2023-12-01">
+            <br>
+            <br>
+            <!-- you can add a default month (year-month) using the value attribute. Example: value="2022-07" -->
+            month:
+            <input type="month" value="2023-10">
+            <br>
+            <br>
+            <!-- you can add a default time using the value attribute. Example: value="22:14" or value="13:10:12" -->
+            time:
+            <input type="time" name="time" value="22:14">
+            <br>
+            <br>
+            <!-- you can add a default week using the value attribute. Example: "2022-W11" -->
+            week:
+            <input type="week" value="2022-W11">
+            <br>
+            <br>
+            <!-- Define a field for an e-mail address (validates automatically when submitted)
+            The input value is automatically validated to ensure it is a properly formatted e-mail address.
+            novalidate attributes nulls default validation of certain input form types such as email
+            that means there will be no validation -->
+            email:
+            <input type="email" name="email" novalidate required>
+            <br>
+            <br>
+            <!-- input search used as a small feature that is remember the search value
+                when we focus on the input field but not the entire search functionality -->
+            search:
+            <input type="search" name="my-search">
+            <br>
+            <br>
+            <!-- input range used a virtual widget slider with step, min, max attributes
+                by default the range will be in middle of the value -->
+            range:
+            <input type="range" step="2" min="0" max="10">
+            <br>
+            <br>
+            <!-- input tel denotes the telephone number 
+            pattern attributes defines it should match with the input box value -->
+            tel:
+            <input type="tel" name="telephone" pattern="[A-Za-z]{3}[-][0-9]{2}" title="3 letters then - (hyphen) with 2 numbers.Example: abc-12">
+            <br>
+            <br>
+            <!-- datalist, option, list which is same like select and option tags
+            id and list attribute values should be same 
+            value attribute inside option tag and cars name comes inside the option opening & closing tag should be same -->
+            <label>datalist option list</label>
+            <input type="text" name="cars" list="cars">
+            <datalist id="cars">
+                <option value="Benz">Benz</option>
+                <option value="Nano">Nano</option>
+                <option value="Hyundai">Hyundai</option>
+            </datalist>
+            <br>
+            <br/>
+            <!-- select and option  -->
+            <label>select option</label>
+            <select name="colors" id="colors">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+            <br>
+            <br>
+            <!-- new progress element -->
+            <progress value="25" max="100"></progress>
+            <br>
+            <br>
+            <!-- meter -->
+            <meter min="0" max="100" value="38"></meter>
+            <br>
+            <br>
+            <!-- output tag mostly used with JS functionality -->
+            <output id="output" onclick="message();">Sample output test</output>
+            <!-- <input type="button" value="button" onclick="message();"> -->
+            <br>
+            <br>
+            <!-- input submit used to submit the form -->
+            submit:
+            <input type="submit" value="Submit" formmethod="get" formaction="test.php" formenctype="application/x-www-form-urlencoded"
+                formtarget="_blank">
+        </fieldset>
+    </form>
+    <script>
+        function message() {
+            // alert('working');
+            document.getElementById('output').innerHTML = 'Hello output tag';
+        }
+    </script>
+
+    <br>
+    <img src="assets/images/Red_Tshirt.svg" title="Red-TShirt" alt="svg image inside the image tag of source attribute" width="200">
+    <br>
+    <br>
+    <svg width="1000" height="500">
+        <circle cx="100" cy="100" r="60" fill="red" stroke="black" stroke-width="3" />
+        <rect width="150" height="150" x="250" y="50" fill="blue" stroke="red" stroke-width="3"></rect>
+        <line x1="450" y1="400" x2="200" y2="200" style="stroke: red; stroke-linecap: butt; stroke-width: 20"></line>
+        <line x1="450" y1="400" x2="200" y2="200" style="stroke: red; stroke-linecap: square; stroke-width: 12;"></line>
+        <polyline points="100 100, 150 150, 200 100" style="stroke: green; stroke-width: 12; stroke-linejoin: miter; fill:none;"></polyline>
+        <ellipse cx="150" cy="350" rx="140" ry="50" style="fill: orange; stroke: red;"></ellipse>
+        <polygon points="650 150, 750 20, 530 50" style="stroke:#ff5464; stroke-width: 12; fill:#443423"></polygon>
+    </svg>
+    <svg width="1000" height="150">
+        <!-- <rect width="100" height="100" x="20" y="20" style="stroke: red; stroke-width: 12;"> -->
+        <polygon points="650 150, 750 20, 530 50" style="stroke:coral; stroke-width: 12; fill: cornflowerblue;">
+            <animate attributeName="points" from="650 150, 750 20, 530 50" to="10 20, 30 60, 50 10" dur="3s" fill="freeze" repeatCount="2"></animate>
+        </polygon>
+        <!-- </rect> -->
+    </svg>
+    <svg width="500" height="500">
+        <path d="M 0 0, L 200 200, L 200 0 Z" style="stroke: #000; fill: none;"></path>
+        <path d="M 350 250, H200, V300 Z" style="stroke: #ff0000; fill: none"></path>
+    </svg>
+    <svg>
+        <defs>
+            <filter id="rect-effect-id">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10"></feGaussianBlur>
+            </filter>
+        </defs>
+        <rect width="100" height="100" x="10" y="10" fill="yellow" filter="url(#rect-effect-id)"></rect>
+    </svg>
+    <br>
+    <video id="galaxy" width="500" height="500" controls poster="assets/images/Dog.jpg" loop autoplay muted preload="none">
+        <source src="assets/video/galaxies.mp4">
+        <track src="file.vtt" kind="captions" label="captions-english" srclang="en" default>
+    </video>
+    <br>
+    <audio id="audiosample" width="100" height="100" controls loop autoplay muted preload="none">
+        <source src="assets/audio/AudioSample.mp3">
+    </audio>
+    <section itemscope itemtype="https://schema.org/Restaurant">
+        <h1 itemprop="name">Jug Kitchen</h1>
+        <div itemprop="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li>Sugar pongal</li>
+                <li>Upma varieties</li>
+                <li>Dosa</li>
+            </ul>
+        </div>
+    </section>
+    <math>
+        <mrow>
+            <msup>
+                <mi>a</mi>
+                <mn>2</mn>
+            </msup>
+            <mo>+</mo>
+            <msup>
+                <mi>b</mi>
+                <mn>2</mn>
+            </msup>
+            <mo>=</mo>
+            <msup>
+                <mi>c</mi>
+                <mn>2</mn>
+            </msup>
+        </mrow>
+    </math>
+    <br>
+    <br/>
+    <canvas id="canvas" width="500" height="500" style="border: 2px solid red;"></canvas>
+</body>
+
+</html>
