@@ -1,0 +1,170 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+h5 {
+    /* color property consists of 4 values like color name, HTML color name, Hex color values, rbg color */
+    color: rgb(79, 157, 219);
+}
+
+p {
+    font-weight: 600;
+    line-height: 1.7em;
+    width: 75%; /* Add the width property value in percentage (%) instead of pixels (px)
+    because it will give us responsive design view */
+}
+
+#microsoft {
+    text-decoration: none;
+}
+
+a:hover { /* :pseudo-class */
+    background-color: red;
+}
+
+a:focus {
+    background-color: yellow;
+}
+
+a:visited {
+    background: coral;
+}
+
+a:active {
+    background: rgb(101,168,225);
+}
+
+#fruits {
+    list-style-type: circle;
+}
+
+ul:nth-of-type(2) {
+    list-style-image: url("assets/images/Red_Tshirt.svg");
+}
+
+table {
+    border: 3px solid #ff0000;
+    border-collapse: collapse;
+}
+
+/* form {
+    width: 100%;
+    background: lightcoral;
+} */
+
+form label {
+    margin: 10px;
+    width: 15%;
+    float: left;
+}
+
+form :is(select, textarea) {
+    /* position: absolute;
+    left: 10rem; */
+    float: left;
+    width: 15%;
+}
+
+form input {
+    padding: 7px;
+    /* position: absolute;
+    left: 10rem; */
+}
+
+form input[type="submit"] {
+    padding: 8px 10px;
+    border-radius: 80px;
+    margin-left: 130px;
+    /* position: absolute;
+    left: 7rem; */
+}
+
+button {
+    float: right;
+}
+
+.container_first {
+    width: 50%;
+    margin: auto;
+}
+
+.container_first h3 {
+    text-align: center;
+    font-weight: 600;
+    font-style: oblique;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.container_first span {
+    font-weight: normal;
+    letter-spacing: 0.7px;
+    word-spacing: 0.2em;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.container_second {
+    border: 5px solid #ff6b5b;
+    padding: 10px 12px 15px;
+    margin: 15px;
+}
+
+.container_third label {
+    display: block;
+}
+
+/* .container_flexbox {
+    display: flex;
+    align-items: center; */
+    /* flex direction default value is row
+    flex-direction: column; */
+/* } */
+
+.container_flexbox div {
+    border: 3px solid red;
+    padding: 15px;
+}
+
+.flexbox-1 {
+    flex: 1;
+    order:3;
+}
+
+.flexbox-2 {
+    flex: 3;
+    order: 1;
+    align-items: center;
+}
+
+.flexbox-3 {
+    flex: 2;
+    order:2;
+}
+
+/* .container_flexbox_first {
+    display: flex;
+    justify-content: center;  */
+    /* When we are using this justify-content property we should add width */
+/* } */
+
+.container_flexbox_first div {
+    border: 2px solid steelblue;
+}
+
+div :is(.flexbox_first, .flexbox_second, .flexbox_third) {
+    /* width: 20%; - width is as same as flex-basis */
+    flex-basis: 20%;
+}
+
+@media (min-width: 550px) {
+    .container_flexbox {
+        display: flex;
+        align-items: center;
+    }
+    .container_flexbox_first {
+        display: flex;
+        justify-content: center;
+    }
+}

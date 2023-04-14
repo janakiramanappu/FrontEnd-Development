@@ -65,6 +65,7 @@
 
 <!-- oncontextmenu attribute will disable the user right clicks -->
 <!-- <body oncontextmenu="return false"> -->
+<!-- <section oncontextmenu="return false"> -->
 
 <body>
 
@@ -215,6 +216,7 @@
             <br>
             <!-- input tel denotes the telephone number 
             pattern attributes defines it should match with the input box value -->
+            <!-- Telephone number pattern format [+][0-9]{2}[-][0-9]{10} - +91-1234567890 -->
             tel:
             <input type="tel" name="telephone" pattern="[A-Za-z]{3}[-][0-9]{2}" title="3 letters then - (hyphen) with 2 numbers.Example: abc-12">
             <br>
@@ -270,13 +272,15 @@
     <img src="assets/images/Red_Tshirt.svg" title="Red-TShirt" alt="svg image inside the image tag of source attribute" width="200">
     <br>
     <br>
-    <svg width="1000" height="500">
+    <svg width="1000" height="500"> <!-- x - horizontal (left & right), y - vertical (top & bottom) -->
         <circle cx="100" cy="100" r="60" fill="red" stroke="black" stroke-width="3" />
-        <rect width="150" height="150" x="250" y="50" fill="blue" stroke="red" stroke-width="3"></rect>
+        <rect width="250" height="150" x="250" y="50" fill="blue" stroke="red" stroke-width="3"></rect>
         <line x1="450" y1="400" x2="200" y2="200" style="stroke: red; stroke-linecap: butt; stroke-width: 20"></line>
         <line x1="450" y1="400" x2="200" y2="200" style="stroke: red; stroke-linecap: square; stroke-width: 12;"></line>
+        <!-- polyline - it will not close the end part -->
         <polyline points="100 100, 150 150, 200 100" style="stroke: green; stroke-width: 12; stroke-linejoin: miter; fill:none;"></polyline>
         <ellipse cx="150" cy="350" rx="140" ry="50" style="fill: orange; stroke: red;"></ellipse>
+        <!-- polygon - by default it will close the last part to form as a shape -->
         <polygon points="650 150, 750 20, 530 50" style="stroke:#ff5464; stroke-width: 12; fill:#443423"></polygon>
     </svg>
     <svg width="1000" height="150">

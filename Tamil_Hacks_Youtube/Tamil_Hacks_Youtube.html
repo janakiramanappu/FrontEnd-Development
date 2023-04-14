@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tamil Hacks HTML CSS JS Tutorials</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="author" content="Tamil">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <meta name="description" content="Web Development Tutorials - FrontEnd">
+    <!-- CSS - External styles -->
+    <link rel="stylesheet" type="text/css" href="Tamil_Hacks_Youtube.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/Dog.jpg">
+    <script src="Tamil_Hacks_Youtube.js"></script>
+
+    <!-- CSS - Internal styles -->
+    <style>
+        h2 {
+            color: #ff2345;
+            background: rgb(110, 207, 146);
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Comments -->
+    <!-- Block level elements - h1,h2,h3,h4,h5,h6,p,div -->
+    <!-- Inline elements - span,img,a -->
+    <!-- Singleton, Empty, Void, Self-Closing tags or elements - hr,br -->
+
+    <!-- 6 Heading tags with CSS - Inline styles -->
+    <h1 style="color: red">Heading1</h1>
+    <h2>Heading2</h2>
+    <h3>Heading3</h3>
+    <h4 style="background-color:burlywood; width: 80px;">Heading4</h4>
+    <h5>Heading5</h5>
+    <h6>Heading6</h6>
+
+    <!-- paragraph tag -->
+    <!-- hr - horizontal rule, br - line break, b - bold tag, i - italic tag, u - underline tag
+    strong - bold tag, em - emphasize tag -->
+    <p>Lorem ipsum dolor sit
+        <b>amet consectetur</b> adipisicing elit.
+        <i>Omnis perferendis</i> laudantium molestias
+        <u>minus aperiam modi</u> iste doloribus
+        <br>nulla nemo incidunt!</p>
+    <hr>
+
+    <p>Lorem ipsum dolor sit
+        <strong>amet consectetur</strong> adipisicing elit.
+        <em>Illo id architecto</em> fugit obcaecati quod,
+        <br>illum expedita! Dolorum odio bquibusdam facilis?</p>
+
+    <!-- div - Container tag - block level element -->
+    <div>This is my div - block level element</div>
+    <br>
+
+    <!-- span tag - inline element -->
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quisquam!</span>
+    <br>
+    <br>
+
+    <!-- img - Image tag -->
+    <img src="../assets/images/moon.jpg" alt="Moon light" width="270" height="320">
+    <br>
+    <br>
+
+    <!-- a - anchor tag with reference links and target attributes with blank,self,parent,top
+        or _blank,_self,_parent,_top -->
+    <!-- <a href="https://www.google.com">Google</a> -->
+    <a href="#URL" target="blank">Google</a>
+    <br>
+    <br>
+
+    <a href="#test" id="microsoft">Microsoft</a>
+    <br>
+    <br>
+
+    <!-- Anchor with image tag - Inline inside block element -->
+    <!-- <a href="https://www.google.com"> -->
+    <a href="#URL" target="_blank">
+        <img src="../assets/images/sunrise.jpg" alt="Sunrise" width="210" height="170">
+    </a>
+    <br>
+
+    <!-- List - unordered list (ul), ordered list (ol), list item (li) -->
+    <ul id="fruits">The Unordered list of fruits
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+    </ul>
+    <ul>
+        <li>Pulsar</li>
+        <li>Honda</li>
+        <li>Splender</li>
+    </ul>
+    <ol>The Ordered list of vegetables
+        <li>Potato</li>
+        <li>Carrot</li>
+        <li>Beetroot</li>
+    </ol>
+
+    <!-- table tag - head, thead, tr, th, body, tbody, tr, td -->
+    <table border="1">
+        <caption>Details</caption>
+        <colgroup>
+            <col span="2" style="background: red;">
+            <col style="color: blue;">
+        </colgroup>
+
+        <head>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </head>
+
+        <body>
+            <tr>
+                <td>Ram</td>
+                <td>ram@test.com</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td>Arjun</td>
+                <td>arjun@test.com</td>
+                <td>49</td>
+            </tr>
+            <tr>
+                <td>Ragu</td>
+                <td>ragu@test.com</td>
+                <td>59</td>
+            </tr>
+        </body>
+    </table>
+
+    <br>
+
+    <!-- form tag - div,label,input,select-option,textarea & button tags
+        input type as text,password,number,date,submit -->
+    <form action="test.php" method="POST">
+
+        <div>
+            <label>First Name</label>
+            <input type="text" name="fname" placeholder="Enter your first name">
+        </div>
+        <br>
+        <br>
+
+        <label>Last Name</label>
+        <input type="text" name="lname">
+        <br>
+        <br>
+        <br>
+
+        <label>DOB</label>
+        <input type="date" value="2023-04-10">
+        <br>
+        <br>
+
+        <div>
+            <label>Phone number</label>
+            <input type="number">
+        </div>
+        <br>
+        <br>
+
+        <label>Select Color</label>
+        <select>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+        <br>
+        <br>
+        <br>
+
+        <label>Messages</label>
+        <textarea></textarea>
+        <br>
+        <br>
+        <br>
+
+        <input type="submit" value="Submit">
+        <br>
+        <br>
+        <br>
+        <!-- <button>Submit</button> -->
+
+    </form>
+
+    <!-- button tag with onclick functionality -->
+    <button onclick="kat()">Click me here!!</button>
+
+    <!-- div container with css styling -->
+    <div class="container">
+        <div class="container_first">
+            <h3>Cricket</h3>
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam a repellendus ipsam cupiditate maxime, voluptatibus
+                sapiente architecto fugiat modi pariatur blanditiis quis sint nemo rerum consequuntur possimus rem officiis
+                asperiores.
+            </span>
+        </div>
+        <div class="container_second">
+            <h3>FootBall</h3>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum harum repellendus a veniam similique, perferendis
+                voluptas aliquid. Numquam, vero fuga.</span>
+        </div>
+        <div class="container_third">
+            <h4>BasketBall</h4>
+            <span>Lorem ipsum dolor sit amet
+                <label>consectetur adipisicing elit
+                    <label>. Nisi perspiciatis nam architecto nemo reiciendis voluptas nihil quas expedita dicta excepturi.</span>
+        </div>
+    </div>
+
+    <!-- FlexBox Container -->
+    <div class="container_flexbox">
+        <div class="flexbox-1">
+            <h1>Flexbox-1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, laudantium!</p>
+        </div>
+        <div class="flexbox-2">
+            <h1>Flexbox-2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, dolor?</p>
+        </div>
+        <div class="flexbox-3">
+            <h1>Flexbox-3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, provident?</p>
+        </div>
+    </div>
+    <div class="container_flexbox_first">
+        <div class="flexbox_first">
+            <h1>Flexbox First</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, consectetur!</p>
+        </div>
+        <div class="flexbox_second">
+            <h1>Flexbox Second</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, modi.</p>
+        </div>
+        <div class="flexbox_third">
+            <h1>Flexbox Third</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nesciunt.</p>
+        </div>
+    </div>
+
+    <script>
+        alert("This is an alert message from inside body tag");
+        function kat() {
+            alert("kat function is called..");
+        }
+    </script>
+</body>
+<script>
+    alert("This is an alert message outside body tag")
+</script>
+
+</html>
