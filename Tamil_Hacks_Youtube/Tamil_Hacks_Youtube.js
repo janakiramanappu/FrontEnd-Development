@@ -1,3 +1,5 @@
+// This page have some basic fundamentals understanding of JS
+
 /* External JavaScript file, use it inside head tag
 Internal JavaScript file, use it inside body tag */
 
