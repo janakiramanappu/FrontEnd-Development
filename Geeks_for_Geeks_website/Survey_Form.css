@@ -1,0 +1,43 @@
+/* Second project css changes - Survey form */
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: slateblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    background-color: thistle;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px 40px;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea, button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+form div :is(span) {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+button {
+    font-weight: 600;
+}
