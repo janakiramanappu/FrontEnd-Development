@@ -1,0 +1,45 @@
+/* Third Project css changes - Parallex Website */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parallex-1 {
+    background: url('../assets/images/decorative-wall.jpg') center/cover fixed;
+    height: 100vh;
+}
+
+.parallex-1 p {
+    background: yellow;
+    position: absolute;
+    bottom: 0px;
+}
+
+.parallex-2 {
+    background: url("../assets/images/decorative-lamp.jpg") center/cover fixed;
+    height: 100vh;
+}
+
+/* .parallex-2 p {
+    background: burlywood;
+    position: relative;
+    top: 535px;
+} */
+
+.parallex-3 {
+    background: url('../assets/images/decorative-room.jpg') center/cover fixed;
+    height: 100vh;
+}
+
+/* .parallex-3 p {
+    background: crimson;
+    position: relative;
+    top: 535px;
+} */
+
+.parallex-1 span, .parallex-2 span, .parallex-3 span {
+    color: #fff;
+    background-color: chocolate;
+}
