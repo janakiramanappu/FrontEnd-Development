@@ -164,3 +164,20 @@ var carbrand_first = new car('nano', 'test', 'white');  // carbrand_first is an 
 console.log(carbrand, carbrand_first);
 console.log(carbrand.carname, carbrand.cartype, carbrand.carcolor);
 console.log(carbrand_first.carname + " " + carbrand_first["cartype"] + " " + carbrand_first.carcolor);
+
+// JavaScript - 3 hour course
+
+
+
+// JavaScript Interview Questions - Simplilearn
+
+// Removing Duplicates
+
+let arrDuplicate = ['a', 'b', 'c', 'a', 'b', 'd'];
+
+let call = arrDuplicate.filter((c, index) => {
+    console.log(c, " ", index, " ", arrDuplicate.indexOf(c));
+    return arrDuplicate.indexOf(c) == index;
+});
+
+console.log(call);

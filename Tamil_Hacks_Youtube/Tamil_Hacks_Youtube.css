@@ -41,7 +41,7 @@ a:active {
     list-style-type: circle;
 }
 
-ul:nth-of-type(2) {
+ul:nth-of-type(2) { /* svg image not taking in the browser need to check on it */
     list-style-image: url("assets/images/Red_Tshirt.svg");
 }
 
