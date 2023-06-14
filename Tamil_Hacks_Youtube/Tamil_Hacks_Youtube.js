@@ -23,12 +23,18 @@ alert("The name is " + name_1)
 var $age_1 = 10;
 console.log($age_1);
 
-var apple = "this is a fruit"; // Javascript is case-sensitive
+var apple = "this is a fruit"; // Javascript is case-sensitive, the variables apple and Apple are two different variables
 var Apple = "this is also a fruit";
 console.log(apple, Apple);
 console.log(apple, " ", Apple);
 console.log(apple + "" + Apple);
 console.log(apple + Apple);
+
+if (apple === Apple) {
+    console.log("Both are same");
+} else {
+    console.log("Both are different");
+}
 
 var num1 = 10;
 var num2 = 20;
@@ -62,10 +68,17 @@ todo.push('q');
 console.log(todo);
 var len = todo.length;
 console.log("The length is", todo.length, len);
-var sort = todo.sort();
-console.log("The sort is", todo.sort(), sort);
-var rev = todo.reverse();
-console.log('The reverse is', todo.reverse(), rev);
+todo.sort();
+console.log("The sort is", todo);
+todo.reverse();
+console.log("The reverse is", todo);
+// var sort = todo.sort(); // The Array.sort() method sorts the elements of an array.
+// var rev = todo.reverse(); // The Array.reverse() method reverses the order.
+// var toDo = ['wakeup', 'workout', 90, 'i', 200, 'h1', 'q'];
+// console.log(toDo);
+// var rev = toDo.reverse();
+// console.log("variable rev is", rev);
+// console.log('The reverse is', toDo, "-", toDo.reverse(), toDo);
 
 // Loops - for, while, foreach
 var i;
@@ -141,7 +154,13 @@ var people = {
 
 console.log(people);
 
-console.log(people.fname + " " + people.lname + " " + people.age + " " + people.children);
+console.log(people.fname + " " + people.lname + " " + people.age + " " + people.children + " " + people.address);
+// above in the console.log of people.address displaying the output like [object object], don't use nested object along with key-value pairs
+
+console.log(people.fname + " " + people.lname + " " + people.age + " " + people.children + " " + JSON.stringify(people.address));
+// above console.log of people.address use JSON.stringify - to get the json in a string format
+
+console.log(people.address);
 
 console.log(people.address.doorno, people.address.street, people.address.city, people.address.state);
 

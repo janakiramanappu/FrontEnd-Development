@@ -31,7 +31,7 @@
 
     <!-- Comments -->
     <!-- Block level elements - h1,h2,h3,h4,h5,h6,p,div -->
-    <!-- Inline elements - span,img,a -->
+    <!-- Inline elements - span,img,a,label,input -->
     <!-- Singleton, Empty, Void, Self-Closing tags or elements - hr,br -->
 
     <!-- 6 Heading tags with CSS - Inline styles -->
@@ -44,7 +44,7 @@
 
     <!-- paragraph tag -->
     <!-- hr - horizontal rule, br - line break, b - bold tag, i - italic tag, u - underline tag
-    strong - bold tag, em - emphasize tag -->
+    strong - bold tag/strong, em - emphasize tag -->
     <p>Lorem ipsum dolor sit
         <b>amet consectetur</b> adipisicing elit.
         <i>Omnis perferendis</i> laudantium molestias
@@ -71,10 +71,12 @@
     <br>
     <br>
 
-    <!-- a - anchor tag with reference links and target attributes with blank,self,parent,top
-        or _blank,_self,_parent,_top -->
+    <!-- a - anchor tag with reference links and target attributes with blank,self,parent,top,framename
+        or _blank,_self,_parent,_top,framename (instead use these options with underscore)
+        open the linked document in a new window or tab, same frame as it was clicked (default), 
+        parent frame, full body of the window, named iframe -->
     <!-- <a href="https://www.google.com">Google</a> -->
-    <a href="#URL" target="blank">Google</a>
+    <a href="#URL" target="_blank">Google</a>
     <br>
     <br>
 
@@ -106,7 +108,7 @@
         <li>Beetroot</li>
     </ol>
 
-    <!-- table tag - head, thead, tr, th, body, tbody, tr, td -->
+    <!-- table tag - head, thead, tr, th, body, tbody, tr, td, tfoot, tr, td -->
     <table border="1">
         <caption>Details</caption>
         <colgroup>
@@ -183,12 +185,13 @@
         <br>
 
         <label>Messages</label>
-        <textarea></textarea>
+        <textarea rows="10" cols="10"></textarea>
         <br>
         <br>
         <br>
-
+        <!-- <div> -->
         <input type="submit" value="Submit">
+        <!-- </div> -->
         <br>
         <br>
         <br>

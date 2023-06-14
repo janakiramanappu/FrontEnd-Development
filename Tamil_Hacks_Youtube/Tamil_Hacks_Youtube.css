@@ -6,12 +6,12 @@ body {
 }
 
 h5 {
-    /* color property consists of 4 values like color name, HTML color name, Hex color values, rbg color */
+    /* color property consists of 4 values like color name, HTML color name, Hex color values, rbg color, HSL color values */
     color: rgb(79, 157, 219);
 }
 
 p {
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: 1.7em;
     width: 75%; /* Add the width property value in percentage (%) instead of pixels (px)
     because it will give us responsive design view */
@@ -41,7 +41,8 @@ a:active {
     list-style-type: circle;
 }
 
-ul:nth-of-type(2) { /* svg image not taking in the browser need to check on it */
+ul:nth-of-type(2) { /* svg image not taking in the browser need to check on it
+    ul:nth-of-type(2) means second Unordered List (ul) */
     list-style-image: url("assets/images/Red_Tshirt.svg");
 }
 
@@ -64,7 +65,7 @@ form label {
 form :is(select, textarea) {
     /* position: absolute;
     left: 10rem; */
-    float: left;
+    /* float: left; */
     width: 15%;
 }
 
