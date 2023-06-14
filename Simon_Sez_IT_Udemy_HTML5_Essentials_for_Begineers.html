@@ -274,12 +274,15 @@
     <img src="assets/images/Red_Tshirt.svg" title="Red-TShirt" alt="svg image inside the image tag of source attribute" width="200">
     <br>
     <br>
-    <svg width="1000" height="500"> <!-- x - horizontal (left & right), y - vertical (top & bottom) -->
+    <svg width="1000" height="500">
+        <!-- x - horizontal (left & right), y - vertical (top & bottom) -->
         <circle cx="100" cy="100" r="60" fill="red" stroke="black" stroke-width="3" />
         <rect width="250" height="150" x="250" y="50" fill="blue" stroke="red" stroke-width="3"></rect>
+        <!-- strike-linecap attributes will have values like butt, square, round -->
         <line x1="450" y1="400" x2="200" y2="200" style="stroke: red; stroke-linecap: butt; stroke-width: 20"></line>
         <line x1="450" y1="400" x2="200" y2="200" style="stroke: red; stroke-linecap: square; stroke-width: 12;"></line>
         <!-- polyline - it will not close the end part -->
+        <!-- stroke-linejoin attributes will have values like miter, bevel, round -->
         <polyline points="100 100, 150 150, 200 100" style="stroke: green; stroke-width: 12; stroke-linejoin: miter; fill:none;"></polyline>
         <ellipse cx="150" cy="350" rx="140" ry="50" style="fill: orange; stroke: red;"></ellipse>
         <!-- polygon - by default it will close the last part to form as a shape -->
@@ -287,6 +290,8 @@
     </svg>
     <svg width="1000" height="150">
         <!-- <rect width="100" height="100" x="20" y="20" style="stroke: red; stroke-width: 12;"> -->
+        <!-- reference links: developer mozilla mdn - svg attribute fill -->
+        <!-- attributeName attribute refers to which attribute position the animation should be done - like should be in x, y, cx, points etc.. -->
         <polygon points="650 150, 750 20, 530 50" style="stroke:coral; stroke-width: 12; fill: cornflowerblue;">
             <animate attributeName="points" from="650 150, 750 20, 530 50" to="10 20, 30 60, 50 10" dur="3s" fill="freeze" repeatCount="2"></animate>
         </polygon>
@@ -294,11 +299,19 @@
     </svg>
     <svg width="500" height="500">
         <path d="M 0 0, L 200 200, L 200 0 Z" style="stroke: #000; fill: none;"></path>
-        <path d="M 350 250, H200, V300 Z" style="stroke: #ff0000; fill: none"></path>
+        <path d="M350 250, H200, V300 Z" style="stroke:firebrick; fill: salmon;"></path>
+        <path d="M20 10, H50 V0 L80 20 L50 70 V50 H20 V10" style="stroke: #ff0000; fill: none"></path>
+        <!-- <path d="M20 10, H50 V0 L60 20 L50 40 V30 H20 V10"></path> -->
+        <path d="M80 80, H40, V30, H80, V80" style="stroke: darkred; fill: chocolate"></path>
     </svg>
     <svg>
         <defs>
             <filter id="rect-effect-id">
+                <!-- The id attribute of the <filter> element defines a unique name for the filter
+                    The blur effect is defined with the <feGaussianBlur> element
+                    The in="SourceGraphic" part defines that the effect is created for the entire element
+                    The stdDeviation attribute defines the amount of the blur
+                The filter attribute of the <rect> tag links the element to the filter tag with id attribute -->
                 <feGaussianBlur in="SourceGraphic" stdDeviation="10"></feGaussianBlur>
             </filter>
         </defs>
