@@ -665,6 +665,58 @@
             </tr>
         </tfoot>
     </table>
+    <!-- Form tags -->
+    <!-- name attribute in an input tag which is used to tell the server that the data is username, pwd, date etc.. -->
+    <!-- size attribute defines the width size of an input box and maxlength defines the number of characters in an input box -->
+    <!-- size attribute - specify the initial width for an input field and a number of visible rows for the select element. -->
+    <!-- Masked Characters in html which denotes special characters like the input type password field value -->
+    <!-- Input fields with values typed in the form will get appended with url (like key-value pairs) once we click on submit button, that is called as query strings -->
+    <!-- value attribute in an input field which denotes the default value -->
+    <!-- Form data submission to server - has 2 values inside method attributes like GET (default value), POST -->
+    <!-- GET method will take the data and convert it into query strings, append it with URL and transfer the data to server for example: whatever we search inside browser search it will bring URL with appended typed query string 
+      http://localIPaddress/Tamil_Developer_Youtube/process.php?username=John&lastname=Cena&pwd=johncena&submit=Submit 
+      https://www.google.com/search?q=cricket+scores&oq=cricket+scores&aqs=chrome..69i57j0i131i433i512j0i512j0i3j0i433i512l2j46i340i512j0i433i512l2j0i10i131i433i650.3035j0j7&sourceid=chrome&ie=UTF-8-->
+    <!-- POST method will transfer the data to server behind the scenes -->
+    <!-- action attribute will process the form data input actions to send/pass the information inside the respected file  -->
+    <h2>Form Tags Exercise</h2>
+    <h3>Login Form</h3>
+    <form method="GET" action="process.php">
+        <p>Username:
+            <input type="text" name="username" placeholder="Enter your name" size="20" maxlength="25" value="admin">
+        </p>
+        <p>Lastname:
+            <input type="text" name="lastname">
+        </p>
+        <p>Password:
+            <input type="password" name="pwd" placeholder="Please type your password" size="8">
+        </p>
+        <p>Comments:
+            <textarea name="comments" cols="30" rows="3" placeholder="enter your comments">Your comments here..</textarea>
+        </p>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+    <form action="">
+        <h3>Contact Form</h3>
+        <p>Name:
+            <br>
+            <input type="text" name="your_name">
+        </p>
+        <p>Email:
+            <br>
+            <input type="text" name="email_id">
+        </p>
+        <p>Subject:
+            <br>
+            <input type="text" name="subject">
+        </p>
+        <p>Message:
+            <br>
+            <textarea name="message" cols="40" rows="6" placeholder="Enter your message"></textarea>
+        </p>
+        <p>
+            <input type="submit" name="contact_submit" value="Send Message">
+        </p>
+    </form>
 </body>
 
 </html>
