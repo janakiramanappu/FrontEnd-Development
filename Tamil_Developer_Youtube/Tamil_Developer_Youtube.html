@@ -5,6 +5,16 @@
 
 <head>
     <title>Tamil Developer Web Development Fundamentals</title>
+    <style>
+        .html_elements h3,
+        em {
+            border: 1px solid red;
+        }
+
+        iframe {
+            background: lightsalmon;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,6 +34,7 @@
     <p>Become a developer by learning in your
         <i>mother tongue</i>
     </p>
+
     <!-- superscript, subscript -->
     <h2>Superscript and Subscript tags Exercise</h2>
     <p>(x-y)(x+y) = x
@@ -35,6 +46,7 @@
         <sub>4</sub>)
         <sub>3</sub>
     </p>
+
     <!-- break, horizontal rule -->
     <h2>Break and Horizontal Rule Exercise</h2>
     <h2>Short Poems:</h2>
@@ -69,6 +81,7 @@
         <br>of things.
     </p>
     <hr>
+
     <!-- Strong and Emphasis tags -->
     <h2>Strong and Emphasis tags Exercise</h2>
     <p>Smoking is injurious to health. Smoking
@@ -79,6 +92,7 @@
     <p>India won the gold medal in
         <em>Olymphics</em>
     </p>
+
     <!-- Quote and Blockquote tags -->
     <h2>Quote and Blockquote tags Exercise</h2>
     <p>If I tell you positive attitude helps in learning difficult things. you'll begin to yawn. Yeah, I know, but here is what
@@ -90,6 +104,7 @@
             <strong>Albert Einstein</strong>
         </blockquote>
     </p>
+
     <!-- Abbreviation and Acronym tags -->
     <h2>Abbreviation and Acronym tags Exercise</h2>
     <h3>Abbreviation</h3>
@@ -104,6 +119,7 @@
         <acronym title="National Aeronautics and Space Administration">NASA</acronym> is an independent agency of the United States Federal Government responsible for the civilian space
         program, as well as aeronautics and aerospace research
     </p>
+
     <!-- Citation and Definition tags -->
     <h2>Citation and Definition tags Exercise</h2>
     <p>
@@ -123,6 +139,7 @@
         developed another sense—it can now be used for the image that a person chooses as his or her "embodiment" in an electronic
         medium.
     </p>
+
     <!-- Address tag -->
     <h2>Address tag Exercise</h2>
     <address>
@@ -133,6 +150,7 @@
             <br>Tamilnadu.
         </p>
     </address>
+
     <!-- Delete, Insert and Strikeout tags -->
     <h2>Delete, Insert and Strikeout tags Exercise</h2>
     <p>I plan to buy a
@@ -143,6 +161,7 @@
         <s>12k /</s> 15k rupees. Tamil nadu capital name changed
         <s>from madras</s> to chennai
     </p>
+
     <!-- Image tag -->
     <!-- title attribute value alias called as tooltip -->
     <!-- width and height attributes if needed we can place in img tag as inline style or use it in external css file -->
@@ -153,6 +172,7 @@
     <img src="../assets/images/kalam.jpg" alt="Dr.APJ.Abdul kalam" title="Abdul Kalam" width="660px" align="left">
     <img src="../assets/images/Dog.jpg" alt="Dog" title="Dog" width="660px" height="470px" align="right">
     <hr>
+
     <!-- Text format exercise -->
     <h2>Text format Exercise</h2>
     <h3>Brihadisvara Temple, Thanjavur</h3>
@@ -177,17 +197,20 @@
         sources of which are about 60 km to the west of temple. The temple is one of the most visited tourist attractions
         in Tamil Nadu.
     </p>
+
     <!-- Figure and Figcaption tags -->
     <h2>Figure and Figcaption tags Exercise</h2>
     <figure>
         <img src="../assets/images/decorative-lamp.jpg" alt="Decorative Lamps inside house" title="Decorative Lamps" width="50%">
         <figcaption>Decorative Lamps </figcaption>
     </figure>
+
     <!-- Basic Links tags - Anchor -->
     <h2>Basic Link tag alias Anchor Exercise</h2>
     <p>The cricket scores is available at
         <a href="#URL" target="_blank">Cricbuzz</a> which is a website or mobile apps used to view all cricket scores
     </p>
+
     <!-- Email Links -->
     <h2>Emails links Exercise</h2>
     <p>Email ID for reference is
@@ -196,6 +219,7 @@
     <p>
         <a href="mailto:youremailid@yourdomain.com">Contact me</a> for further references
     </p>
+
     <!-- Named Anchors - link id with href attributes -->
     <h2 id="backtotop">Named Anchors Exercise</h2>
     <p>
@@ -270,6 +294,7 @@
         </p>
         <a href="#backtotop">Back To Top</a>
     </p>
+
     <!-- Absolute and Relative Path -->
     <!-- Absolute File Paths: It describes the full address(URL) to access an internet file. -->
     <!-- Absolute File path which has some sample example like https://www.test.com/testsample.png -->
@@ -284,6 +309,7 @@
     <a href="/assets/images/decorative-cardflower.jpg" target="_blank">
         <img src="./../assets/images/decorative-cardflower.jpg" alt="decorative cardflower" title="decorative cardflower" width="400px">Relative Path
     </a>
+
     <!-- Lists - Unordered, Ordered, Definition -->
     <!-- For Unordered and Ordered list, we use li tag that is list item tag -->
     <!-- Definition list, we use dt (definition term) & dd (definition description) -->
@@ -485,6 +511,7 @@
             </ul>
         </li>
     </ul>
+
     <!-- Table tag -->
     <h2>Table Tag Exercise</h2>
     <table border="4" style="border-collapse: collapse">
@@ -665,6 +692,7 @@
             </tr>
         </tfoot>
     </table>
+
     <!-- Form tags -->
     <!-- name attribute in an input tag which is used to tell the server that the data is username, pwd, date etc.. -->
     <!-- size attribute defines the width size of an input box and maxlength defines the number of characters in an input box -->
@@ -674,49 +702,301 @@
     <!-- value attribute in an input field which denotes the default value -->
     <!-- Form data submission to server - has 2 values inside method attributes like GET (default value), POST -->
     <!-- GET method will take the data and convert it into query strings, append it with URL and transfer the data to server for example: whatever we search inside browser search it will bring URL with appended typed query string 
-      http://localIPaddress/Tamil_Developer_Youtube/process.php?username=John&lastname=Cena&pwd=johncena&submit=Submit 
-      https://www.google.com/search?q=cricket+scores&oq=cricket+scores&aqs=chrome..69i57j0i131i433i512j0i512j0i3j0i433i512l2j46i340i512j0i433i512l2j0i10i131i433i650.3035j0j7&sourceid=chrome&ie=UTF-8-->
+    http://localIPaddress/Tamil_Developer_Youtube/process.php?username=John&lastname=Cena&pwd=johncena&submit=Submit 
+    https://www.google.com/search?q=cricket+scores&oq=cricket+scores&aqs=chrome..69i57j0i131i433i512j0i512j0i3j0i433i512l2j46i340i512j0i433i512l2j0i10i131i433i650.3035j0j7&sourceid=chrome&ie=UTF-8-->
     <!-- POST method will transfer the data to server behind the scenes -->
     <!-- action attribute will process the form data input actions to send/pass the information inside the respected file  -->
+    <!-- checked attribute (checked="checked") used in input type radio or checkbox which denotes/mark/select the default value when submitted the form -->
+    <!-- for the checkbox and radio input type values, content will not go into server instead the whatever value we are giving inside the value attribute will go into server -->
+    <!-- for the checkbox, we should give the name attribute value with an array for example: hobbies[] because this is mutliselect option. without any array, it will take only the last selected value in the server by overriding the previously selected options -->
+    <!-- selected attribute is used as default selected value in the select & option tag -->
+    <!-- multiple attribute is used to select multiple option from the select & option tag -->
+    <!-- when we click on the form submit button, all the field values will send to server like name-value pairs that is key-value pairs (text-data)  -->
+    <!-- In the form, we will transform the text values, but we need to transform the binary data for ex: while uploading the file in a form of an input type file, you may upload resume or any file, that may in PDF or Doc format, that is binary data not the text data
+    take an another example while uploading the profile image in a form, all the images format will be in binary data  -->
+    <!-- In the form, with an input type file - file name is not transferred to the server instead the entire file itself is transferred to the server, to tell the difference for that we use enctype(encryption type) attribute with multipart/form-data by giving this attribute and value, the file contents will go into the server otherwise the text data only will get transferred into server -->
+    <!-- Whenever you use file input type, you need to use an attribute called enctype with multipart/form-data value in the form tag -->
+    <!-- for easy understanding of websites for screenreader and common people usage in form accessibility - radio input tag - the for & id attributes have same value, this will enable for clicking the radio button both on circle and the text
+    without this for & id attributes, radio input tag we can select the option only through the circle not by text - this way of accessing is for all the input tags -->
+    <!-- name attributes is for sending the values to the server  -->
+    <!-- id attributes is for identify the field in the browser -->
+    <!-- set of fields we need to group it in the form means use fieldset tag and title for the group use legend tag -->
+    <!-- required attribute is a mandatory attribute to fill up in the form -->
+    <!-- range input tag default value is from 0 to 100 -->
+
     <h2>Form Tags Exercise</h2>
-    <h3>Login Form</h3>
-    <form method="GET" action="process.php">
-        <p>Username:
-            <input type="text" name="username" placeholder="Enter your name" size="20" maxlength="25" value="admin">
-        </p>
-        <p>Lastname:
-            <input type="text" name="lastname">
-        </p>
-        <p>Password:
-            <input type="password" name="pwd" placeholder="Please type your password" size="8">
-        </p>
-        <p>Comments:
-            <textarea name="comments" cols="30" rows="3" placeholder="enter your comments">Your comments here..</textarea>
-        </p>
-        <input type="submit" name="submit" value="Submit">
+    <form method="GET" action="process.php" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Login Form</legend>
+            <!-- <h3>Login Form</h3> -->
+            <p>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" placeholder="Enter your name" size="20" maxlength="25" value="admin">
+            </p>
+            <p>
+                <label for="lastname">Lastname:</label>
+                <input type="text" name="lastname" id="lastname">
+            </p>
+            <p>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" required min="18" max="99">
+            </p>
+            <p>
+                <label for="DateofBirth">DateofBirth</label>
+                <input type="date" name="DateofBirth" id="DateofBirth">
+            </p>
+            <p>
+                <label for="emailID">EmailID:</label>
+                <input type="email" name="emailID" id="emailID" required>
+            </p>
+            <p>
+                <label for="pwd">Password:</label>
+                <input type="password" name="pwd" id="pwd" placeholder="Please type your password" size="8">
+            </p>
+            <p>
+                <label for="price">Price:</label>
+                <input type="range" name="price" id="price" min="0" max="100" step="10">
+            </p>
+            <p>
+                <label for="website">Website:</label>
+                <input type="url" name="website" id="website">
+            </p>
+            <p>
+                <label for="timeArrive">Time Arrived:</label>
+                <input type="time" name="timeArrive" id="timeArrive">
+            </p>
+            <p>
+                <label for="vacation_week">Vacation Week:</label>
+                <input type="week" name="vacation_week" id="vacation_week">
+            </p>
+            <p>
+                <label for="job_search">Job Search:</label>
+                <input type="search" name="job_search" id="job_search">
+            </p>
+            <p>
+                <label>Languages that you know</label>
+                <br>
+                <input type="radio" name="web_language" id="html" value="html" checked="checked">
+                <label for="html">HTML</label>
+                <input type="radio" name="web_language" id="css" value="css">
+                <label for="css">CSS</label>
+                <input type="radio" name="web_language" id="js" value="js">
+                <label for="js">JavaScript</label>
+            </p>
+            <p>
+                <label>The Hobbies are</label>
+                <br>
+                <input type="checkbox" name="hobbies[]" id="animation" value="animation">
+                <label for="animation">Animation</label>
+                <input type="checkbox" name="hobbies[]" id="skating" value="skating">
+                <label for="skating">Skating</label>
+                <input type="checkbox" name="hobbies[]" id="cricket" value="cricket">
+                <label for="cricket">Cricket</label>
+                <input type="checkbox" name="hobbies[]" id="design" value="design">
+                <label for="design">design</label>
+                <input type="checkbox" name="hobbies[]" id="keyboard" value="keyboard">
+                <label for="keyboard">Keyboard</label>
+            </p>
+            <p>
+                <label for="Date-Of-Birth">Date-Of-Birth</label>
+                <select name="Date-Of-Birth" id="Date-Of-Birth" multiple size="6">
+                    <option value="">Select Date</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </p>
+            <p>
+                <label for="education"> Education:</label>
+                <select name="education" id="education">
+                    <option value="B.E">B.E</option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="M.S">M.S</option>
+                    <option value="PHD">PHD</option>
+                </select>
+            </p>
+            <p>
+                <label for="job_position">You want to apply for the position</label>
+                <select name="job_position" id="job_position">
+                    <option value="frontend">FrontEnd</option>
+                    <option value="backend">BackEnd</option>
+                    <option value="fullstack">FullStack</option>
+                </select>
+            </p>
+            <p>
+                <label for="resume_upload">Resume File Upload:</label>
+                <input type="file" name="resume_upload" id="resume_upload">
+            </p>
+            <p>
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments" cols="30" rows="3" placeholder="enter your comments">Your comments here..</textarea>
+            </p>
+            <input type="submit" name="submit" value="Submit">
+        </fieldset>
     </form>
     <form action="">
-        <h3>Contact Form</h3>
-        <p>Name:
-            <br>
-            <input type="text" name="your_name">
-        </p>
-        <p>Email:
-            <br>
-            <input type="text" name="email_id">
-        </p>
-        <p>Subject:
-            <br>
-            <input type="text" name="subject">
-        </p>
-        <p>Message:
-            <br>
-            <textarea name="message" cols="40" rows="6" placeholder="Enter your message"></textarea>
-        </p>
-        <p>
-            <input type="submit" name="contact_submit" value="Send Message">
-        </p>
+        <fieldset>
+            <!-- <h3>Contact Form</h3> -->
+            <legend>Contact Form</legend>
+            <p>Name:
+                <br>
+                <input type="text" name="your_name" value="apple">
+            </p>
+            <p>Email:
+                <br>
+                <input type="text" name="email_id">
+            </p>
+            <p>Subject:
+                <br>
+                <input type="text" name="subject">
+            </p>
+            <p>Is this a
+                <br>
+                <input type="radio" name="request_type" value="sales" checked>Sales request
+                <input type="radio" name="request_type" value="support">Support request
+            </p>
+            <p> Fav Sports Personality
+                <br>
+                <input type="checkbox" name="player1" value="sachin">Sachin
+                <input type="checkbox" name="player2" value="dhoni">Dhoni
+                <input type="checkbox" name="player3" value="rohit" checked>Rohit
+                <input type="checkbox" name="player4" value="sunil">Sunil Chhetri
+            </p>
+            <p>Message:
+                <br>
+                <textarea name="message" cols="40" rows="6" placeholder="Enter your message"></textarea>
+            </p>
+            <p>
+                <input type="submit" name="contact_submit" value="Send Message">
+            </p>
+        </fieldset>
     </form>
+
+    <!-- Block and Inline HTML Elements -->
+    <!-- Block level will take the full page width and inline take the required content width -->
+    <h2>Block and Inline Level HTML Elements Exercise</h2>
+    <div class="html_elements">
+        <h3>This is a heading1 tag</h3>
+        <p>HTML elements has 2 types:
+            <em>Block</em> and
+            <em>Inline</em> level elements</p>
+    </div>
+
+    <!-- Grouping Related Information -->
+    <!-- For grouping Block level elements use div tag (division), grouping inline level elements use span tag  -->
+    <!-- span tag - we use separately span means or within div tag or outside div tag without any content in the block level elements but it will have content inside the span tag it will start on the new line -->
+    <!-- span tag - using inside any block level elements like div,p with any content inside div or p tag, means that the span tag content will be in the same line along with block level elements content -->
+    <span>This is a span element outside div tag</span>
+    <div>
+        <span>Span inside div which is block level elements.This is a span without any content in the div tag</span>
+    </div>
+    <p>
+        <span>Span inside paragraph which is block level elements.This is a span without any content in the paragraph tag</span>
+    </p>
+    <div>This is the division tag</div>
+    <div>This is a div element
+        <span>Span inside div.This is a span with content in the div tag</span>
+    </div>
+    <p> This is a paragraph tag
+        <span>Span inside p.This is a span with content in the p tag</span>
+    </p>
+
+    <h2>Grouping Related Information Exercise</h2>
+    <!-- /Header starts -->
+    <div id="header">
+        <h3>Software Developer</h3>
+        <p>My Role in Information Technology</p>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <!-- /Header ends -->
+    <!-- /Content starts -->
+    <div id="content">
+        <h3>My Mission</h3>
+        <p>The Rabbit and The Tortoise story.
+            <span>Slow and Steady wins the race</span>
+        </p>
+        <span>This is a span element inside div tag</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere officia impedit sit. Perferendis minima,
+            blanditiis voluptas consectetur quaerat dolore, facilis, quae illum perspiciatis vero modi quibusdam est error
+            minus. Voluptates quidem vel perspiciatis error exercitationem veritatis mollitia! Corrupti, quod. Aperiam eos
+            in quo fuga necessitatibus voluptatibus exercitationem, quasi praesentium sapiente saepe nulla, suscipit maxime!
+            Laudantium laborum nisi rerum soluta praesentium harum, eum dolor quos vel nihil suscipit magni saepe animi deleniti,
+            sapiente doloribus eligendi nobis quaerat incidunt odit facere. Debitis quos dolor vel vero ratione aspernatur
+            mollitia, eos asperiores explicabo! Ullam non minus expedita in est enim, nostrum mollitia.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet earum, quaerat repellendus, incidunt blanditiis aperiam
+            fuga veniam sed deserunt ea harum, exercitationem unde. Ex laboriosam quas, hic cupiditate neque harum ea illum
+            reiciendis magnam iusto debitis adipisci vero nesciunt temporibus reprehenderit quasi velit possimus, necessitatibus
+            blanditiis eveniet iure aspernatur. Quibusdam maxime beatae eaque hic aperiam distinctio fugit illo vel, tempora
+            velit ea quos veritatis cum repellendus. Possimus exercitationem illo nesciunt dolore doloribus quo placeat,
+            harum modi voluptas deleniti fugit voluptatem delectus molestiae doloremque inventore, fugiat praesentium ex
+            neque officia alias numquam. Culpa deleniti perferendis quod aliquid voluptate consequatur totam impedit.
+        </p>
+    </div>
+    <!-- /Content ends -->
+    <!-- /Footer starts -->
+    <div id="footer">
+        <h3>Additional information</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, soluta. Expedita esse facilis iure. Vero itaque
+            culpa autem nam tempore!
+        </p>
+        <ul>
+            <li>LinkedIn</li>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>GitHub</li>
+        </ul>
+        <p>Copyright 2023. All rights reserved.</p>
+    </div>
+    <!-- /Footer ends -->
+
+    <!-- iframe tag means Inline Frame -->
+    <!-- if we want to embed the webpage then we need to use the iframe tag -->
+    <!-- An inline frame (iframe) is used to embed another document within the current HTML document. -->
+    <!-- deprecated tags like frameset, frame tags, deprecated attributes like frameborder, allowfullscreen -->
+    <!-- allow attributes values like accelerometer, gyroscope will support only when the browser supports that features -->
+    <h2>Iframe Tag Exercise</h2>
+    <iframe src="#EmbededURL" width="200" height="100" title="Sample Embeded URL" frameborder="0"></iframe>
+    <iframe width="560" height="315" src="#EmbedURL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <!-- HTML Entities -->
+    <!-- Character Entity is one of the HTML entities - &nbsp; (1 space), &ensp; (2 spaces), &emsp; (4 spaces) -->
+    <h2>HTML Entities Exercise</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eum temporibus voluptatibus doloribus veritatis numquam
+        atque fugit saepe nobis &lt;cumque culpa perspiciatis&gt; iste aperiam minima ab blanditiis vero aspernatur, provident
+        beatae itaque quam? Voluptatem debitis odio facere nesciunt libero consectetur minus, reiciendis maiores officiis
+        qui possimus quidem, &copy; molestiae vitae nihil!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet&nbsp;consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet &nbsp; consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet&ensp;consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet &ensp; consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet&emsp;consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet &emsp; consectetur adipisicing elit.</p>
+
+    <!-- Comments Exercise -->
+    <h2>Comments Exercise</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <!-- we can put any content inside these comment sign or symbol to indicate as a comment -->
+
+    <!-- Flash technology -->
+    <!-- Flash is used for to apply different fonts, video, audio, animation -->
+
+
+
 </body>
 
 </html>
