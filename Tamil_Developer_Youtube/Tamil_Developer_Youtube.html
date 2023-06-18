@@ -5,6 +5,21 @@
 
 <head>
     <title>Tamil Developer Web Development Fundamentals</title>
+
+    <!-- Meta tags -->
+    <!-- UTF-8 -> UTF - Unicode Transformation Format, 8 which denotes 8 bits -->
+    <!-- Unicode tells whether how to display the particular character -->
+    <!-- Computer is an electronic device, it knows 2 things - one the power is there (1), power is not there (0) -->
+    <!-- Using these 1's and 0's, the computer process the letters, numbers, digits, images -->
+    <!-- ASCII - American Standard Code for Information Interchange -->
+    <!-- 8 bits means we can use upto combination of 256, 256 combinations included like 26 capital letters, 26 small letters, numbers, symbols these are enough for American Standard
+    but not enough for other languages so we are using UTF-8 format-->
+    <!-- In browser, the visible area of content is a viewport -->
+    <meta charset="UTF-8">
+    <meta name="author" content="John">
+    <meta name="description" content="Web Development"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         .html_elements h3,
         em {
@@ -971,6 +986,7 @@
     <iframe src="#EmbededURL" width="200" height="100" title="Sample Embeded URL" frameborder="0"></iframe>
     <iframe width="560" height="315" src="#EmbedURL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
+
     <!-- HTML Entities -->
     <!-- Character Entity is one of the HTML entities - &nbsp; (1 space), &ensp; (2 spaces), &emsp; (4 spaces) -->
     <h2>HTML Entities Exercise</h2>
@@ -988,14 +1004,56 @@
     <p>Lorem ipsum dolor sit amet &emsp; consectetur adipisicing elit.</p>
 
     <!-- Comments Exercise -->
+    <!-- we can put any content inside these comment sign or symbol to indicate as a comment -->
     <h2>Comments Exercise</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <!-- we can put any content inside these comment sign or symbol to indicate as a comment -->
 
     <!-- Flash technology -->
     <!-- Flash is used for to apply different fonts, video, audio, animation -->
 
+    <!-- Audio tags -->
+    <!-- Audio tags supports in mutltiple format like mp3, wav, ogg, m4a -->
+    <!-- MIME - Multipurpose Internet Mail Extensions which denotes the type attribute in the source tag as audio or video like that, A MIME type (or media type) is an identifier for file formats or format contents on the Internet. -->
+    <!-- A media type (also known as a Multipurpose Internet Mail Extensions or MIME type) indicates the nature and format of a document,
+    file, or assortment of bytes. -->
+    <!-- It lets users exchange different kinds of data files, including audio, video, images and application programs, over email. -->
+    <h2>Audio Tag Exercise</h2>
+    <h3>Audio file in wav format</h3>
+    <audio src="testrecording.wav" controls>This browser doesn't support audio tags</audio>
+    <h3>Audio file in mp3 format</h3>
+    <audio src="../assets/audio/AudioSample.mp3" controls>This browser doesn't support audio tags</audio>
+    <h3>Audio file in ogg format</h3>
+    <audio src="testrecording.ogg" controls>This browser doesn't support audio tags</audio>
+    <h3>Audio file in m4a format</h3>
+    <audio src="testrecording.m4a" controls>This browser doesn't support audio tags</audio>
+    <h3>Audio file in multiple format</h3>
+    <audio controls>
+        <source src="testrecording.wav" type="audio/wav">
+        <source src="/assets/audio/AudioSample.mp3" type="audio/mp3">
+        <source src="testrecording.ogg" type="audio/ogg">
+        <source src="testrecording.m4a" type="audio/m4a">
+    </audio>
 
+    <!-- Video tag -->
+    <!-- Video tags supports in mutltiple format like mp4, avi, ogg, webm -->
+    <!-- video and audio tag will be used and have more support when we use these tags in large companies -->
+    <!-- Instead we can use iframe embed for audio and video tags - using audio & video hosting sites -->
+    <h2>Video tag Exercise</h2>
+    <h3>Video file in avi format</h3>
+    <video src="testrecording.avi" controls width="250">This browser doesn't support video embeds tag</video>
+    <h3>Video file in mp4 format</h3>
+    <video src="./../assets/video/galaxies.mp4" controls width="250">This browser doesn't support video embeds tag</video>
+    <h3>Video file in ogg format</h3>
+    <video src="testrecording.ogg" controls width="250">This browser doesn't support video embeds tag</video>
+    <h3>Video file in webm format</h3>
+    <video src="testrecording.webm" controls width="250">This browser doesn't support video embeds tag</video>
+    <h3>Video file in multiple format</h3>
+    <video controls width="400">
+        <source src="testrecording.avi" type="video/avi">
+        <source src="../assets/video/galaxies.mp4" type="video/mp4">
+        <source src="testrecording.ogg" type="video/ogg">
+        <source src="testrecording.webm" type="video/webm">
+    </video>
 
 </body>
 
