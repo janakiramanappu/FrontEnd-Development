@@ -1,13 +1,55 @@
+body {
+    /* font-size: 16px; */
+    /* font-size: 100%; */
+    font-size: 1em;
+    font-weight: 100;   /* font-weight can change from 100 to 300 or 600 - changes will vary accordingly to the value */
+}
+
 .transpareny_opacity {
     background-color: blue;
     border: 2px solid red;
     opacity: 0.5;
 }
 
-h1, h3 {
+h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-size: 48px; */
+    /* font-size: 200%; */
+    font-size: 2em;
+    font-weight: normal;
 }
 
 h2 {
     font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: tomato;
+}
+
+ol {
+    font-style: italic;
+}
+
+li {
+    /* font-size: 1.2em; */
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#normal {
+    font-style: normal;
+}
+
+#uppercase {
+    text-transform: uppercase;
+}
+
+#lowercase {
+    text-transform: lowercase;
+}
+
+#capitalize {
+    text-transform: capitalize;
 }
