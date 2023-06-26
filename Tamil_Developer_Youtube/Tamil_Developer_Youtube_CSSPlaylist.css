@@ -53,3 +53,65 @@ li {
 #capitalize {
     text-transform: capitalize;
 }
+
+a {
+    text-decoration: none;
+}
+
+#important {
+    text-decoration: underline;
+}
+
+#overline {
+    text-decoration: overline;
+}
+
+#line-through {
+    text-decoration: line-through;
+}
+
+#blink {
+    text-decoration: blink;
+}
+
+#more-textdecoration {
+    text-decoration: underline overline;
+}
+
+#leading {
+    line-height: 1.7;
+}
+
+#left-item {
+    text-align: left;
+}
+
+#right-item {
+    text-align: right;
+}
+
+#center-item {
+    text-align: center;
+}
+
+#justify-item {
+    text-align: justify;
+}
+
+img {
+    vertical-align: middle;
+}
+
+em {
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+#letterWordSpacing {
+    letter-spacing: 0.4em;   /* we can using different size units like EMs, CM, Pixels for both letter and word spacing */
+    word-spacing: 50px;       /*  Percentage not accepting in both letter and word spacing */
+}
+
+#textIndent {
+    text-indent: 50px;
+}
