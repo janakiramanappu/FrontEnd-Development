@@ -115,3 +115,78 @@ em {
 #textIndent {
     text-indent: 50px;
 }
+
+#pseudoElementsFirstLetter::first-letter {
+    font-size: 2em;
+}
+
+#pseudoElementsFirstLine::first-line {
+    background-color: cornflowerblue;
+}
+
+.notice {
+    color: crimson;
+    font-size: 2em;
+}
+
+.warning {
+    color: red;
+    font-size: 2em;
+}
+
+.pseudoClass {
+    color: blue;
+}
+
+.pseudoClass:link {
+    color: aqua;
+}
+
+.pseudoClass:visited {
+    color: darkgreen;
+}
+
+.pseudoClass:hover {
+    color: lightsalmon;
+}
+
+.pseudoClass:active {
+    color: darkorchid;
+}
+
+.pseudoClass:focus {
+    color: maroon;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+#leftTextShadow {
+    text-shadow: 4px 0 0 slateblue;
+}
+
+#rightTextShadow {
+    text-shadow: -4px 0 0 slateblue;
+}
+
+#topTextShadow {
+    text-shadow: 0 -4px 0 slateblue;
+}
+
+#bottomTextShadow {
+    text-shadow: 0  4px 0 slateblue;
+}
+
+#shadowTextBlurring {
+    text-shadow: 0 0 6px slateblue;
+}
+
+#shadowTextColor {
+    text-shadow: 0 13px 0 red;
+}
+
+#entireTextShadow {
+    text-shadow: 2px 3px 12px blue;
+}
