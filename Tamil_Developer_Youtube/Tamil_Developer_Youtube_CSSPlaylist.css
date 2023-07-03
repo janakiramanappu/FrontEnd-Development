@@ -3,6 +3,8 @@ body {
     /* font-size: 100%; */
     font-size: 1em;
     font-weight: 100;   /* font-weight can change from 100 to 300 or 600 - changes will vary accordingly to the value */
+    /* width: 100%;
+    height: 100%; */
 }
 
 .transpareny_opacity {
@@ -189,4 +191,73 @@ h4 {
 
 #entireTextShadow {
     text-shadow: 2px 3px 12px blue;
+}
+
+.block_level_element,
+.inline_element {
+    background-color: darkblue;
+    color: gold
+}
+
+/* body {
+    width: 1000px;
+    background-color: grey;
+} */
+
+#wrapper {
+    width: 95%;
+    min-width: 450px;
+    max-width: 1200px;
+    background-color: grey;
+    min-height: 100%;
+    max-height: 125%;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    background-color: goldenrod;
+    height: 200%;
+    /* overflow: hidden;   These values will also come visible, scroll, auto */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.border_property {
+    width: 70%;
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: red; */
+    /* border-width: medium thick 10px thin;
+    border-style: dashed dotted groove ridge;
+    border-color: blueviolet teal salmon sandybrown; */
+    /* border-top: 5px solid blue;
+    border-top-width: 5px;
+    border-top-style: dashed;
+    border-top-color: darkgreen;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    border: 5px solid red;
+}
+
+.container_paddingMarin {
+    width: 60%;
+    border: 2px solid green;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.container_paddingMarin h3,
+.container_paddingMarin p {
+    border: 1px solid red;
+    padding: 10px;
+    margin: 20px;
+}
+
+.container_paddingMarin span {
+    border: 1px solid red;
+    padding: 10px;
+    margin: 20px;
+    width: 200px;
+    height: 100px;
 }
