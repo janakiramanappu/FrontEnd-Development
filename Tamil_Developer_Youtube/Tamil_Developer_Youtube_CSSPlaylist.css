@@ -153,7 +153,7 @@ em {
 }
 
 .pseudoClass:active {
-    color: darkorchid;
+    color: red;
 }
 
 .pseudoClass:focus {
@@ -237,6 +237,7 @@ h4 {
     border-top-color: darkgreen;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px; */
+    /* border-right, border-bottom, bottom-right */
     border: 5px solid red;
 }
 
@@ -260,4 +261,45 @@ h4 {
     margin: 20px;
     width: 200px;
     height: 100px;
+}
+
+#display_property {
+    border: 5px solid hotpink;
+}
+
+#display_property a {
+    color: black;
+}
+
+/* #display_property a:hover {
+    background-color: red;
+    color: white;
+} */
+
+#display_property ul {
+    background-color: aqua;
+    height: 50px;
+    /* padding: 10px; */
+}
+
+#display_property li {
+    list-style-type: none;
+    /* background-color: darkslategray; */
+    display: inline-block; /* display property values contain block, inline, inline-block */
+    height: 50px;
+    padding: 0 10px;
+    line-height: 50px;
+}
+
+#display_property li:hover {
+    background-color: red;
+    color: white;
+}
+
+#display_property #displayNone {
+    display: none;
+}
+
+#display_property #visibilityHidden {
+    visibility: hidden;
 }
