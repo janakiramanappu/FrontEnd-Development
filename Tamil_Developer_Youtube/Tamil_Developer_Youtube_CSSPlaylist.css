@@ -5,6 +5,7 @@ body {
     font-weight: 100;   /* font-weight can change from 100 to 300 or 600 - changes will vary accordingly to the value */
     /* width: 100%;
     height: 100%; */
+    /* background-color: black; */
 }
 
 .transpareny_opacity {
@@ -302,4 +303,54 @@ h4 {
 
 #display_property #visibilityHidden {
     visibility: hidden;
+}
+
+#boxShadow div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid crimson;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+#topLeftBoxShadow {
+    box-shadow: -5px -5px #666666;
+    border-radius: 10px;
+}
+
+#bottomRightBoxShadow {
+    box-shadow: 5px 5px 5px #666666;
+    border-radius: 10px 0;
+}
+
+#bottomRightSpreadBoxShadow {
+    box-shadow: 5px 5px 5px 10px #666666;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 20px;
+}
+
+#outerSpreadBoxShadow {
+    box-shadow: 0 0 10px rgb(202, 202, 65);
+    border-radius: 10px 13px 16px 19px;
+}
+
+#insetBoxShadow {
+    box-shadow: inset 0 0 10px red;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.backgroundProperty {
+    width: 100%;
+    height: 250px;
+    /* background-color: chocolate;
+    background-image: url("../assets/images/Red_Tshirt.svg");
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-attachment: scroll; */
+    background: aqua url('../assets/images/decorative-wall.jpg') no-repeat center center scroll;
+    background-size: contain;
 }
