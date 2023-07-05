@@ -354,3 +354,58 @@ h4 {
     background: aqua url('../assets/images/decorative-wall.jpg') no-repeat center center scroll;
     background-size: contain;
 }
+
+#listStyleNoStyle {
+    list-style-type: none;
+}
+
+#listStyleDiscStyle {
+    list-style-type: disc;
+}
+
+#listStyleCircleStyle {
+    list-style-type: circle;
+}
+
+#listStyleSquareStyle {
+    list-style-type: square;
+}
+
+#listStyleDecimalStyle {
+    list-style-type: decimal;
+}
+
+#listStyleDecimalLeadingStyle {
+    list-style-type: decimal-leading-zero;
+}
+
+#listStyleLowerAlpha {
+    list-style-type: lower-alpha;
+}
+
+#listStyleUpperAlpha {
+    list-style-type: upper-alpha;
+}
+
+#listStyleLowerRoman {
+    list-style-type: lower-roman;
+}
+
+#listStyleUpperRoman {
+    list-style-type: upper-roman;
+}
+
+#customListStyle li {
+    /* list-style-image: url('../assets/images/Red_Tshirt.svg'); */
+    background: url('../assets/images/Red_Tshirt.svg') no-repeat 0px 3px;
+    list-style-type: none;
+    padding-left: 35px;
+}
+
+#listStylePosition {
+    list-style-position: inside;
+}
+
+#listStyleShortHand {
+    list-style: square outside;
+}
