@@ -565,6 +565,137 @@
             repellendus quia! Eligendi, facilis eaque.</li>
     </ul>
 
+    <h2>Table Styling - Border spacing, Border collapse, Remove deprecated attributes</h2>
+    <table>
+        <colgroup>
+            <col span="1" style="background-color: coral;">
+            <col style="background-color:lightcoral;">
+        </colgroup>
+        <tr>
+            <th rowspan="2">Day</th>
+            <th id="timeTableHeading" colspan="11">Time</th>
+        </tr>
+        <tr>
+            <td>9 to 9:45</td>
+            <td>9:45 to 10:30</td>
+            <td rowspan="7">Recess</td>
+            <td>10:45 to 11:30</td>
+            <td>11:30 to 12:15</td>
+            <td rowspan="7">Lunch</td>
+            <td>1:15 to 2:00</td>
+            <td>2:00 to 2:45</td>
+            <td rowspan="7">Recess</td>
+            <td>3:00 to 3:45</td>
+            <td>3:45 to 4:30</td>
+        </tr>
+        <tr>
+            <td class="daysOfWeek">Monday</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="daysOfWeek">Tuesday</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="daysOfWeek">Wednesday</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="daysOfWeek">Thursday</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="daysOfWeek">Friday</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="daysOfWeek">Saturday</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- Within a form tag we can add multiple fieldset tags-->
+    <h2>Form styling - with fieldsets</h2>
+    <form>
+        <fieldset>
+            <legend>Login Details</legend>
+            <label for="username">User Name</label>
+            <br>
+            <input type="text" name="username" id="username">
+            <br>
+            <label for="email">Email</label>
+            <br />
+            <input type="email" name="email" id="email">
+            <br />
+            <label for="pwd">Password</label>
+            <br/>
+            <input type="password" name="pwd" id="pwd">
+            <br/>
+            <label for="confirmPwd">Confirm Password</label>
+            <br>
+            <input type="password" name="confirmPwd" id="confirmPwd">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Employee Details</legend>
+            <label for="qualification">Qualification</label>
+            <br>
+            <input type="text" name="qualification" id="qualification">
+            <br>
+            <label for="college">College</label>
+            <br/>
+            <input type="text" name="college" id="college">
+            <br/>
+            <label for="passedOutyear">Years Passed</label>
+            <br />
+            <input type="number" name="passedOutyear" id="passedOutyear">
+        </fieldset>
+        <br>
+        <button type="submit">Save</button>
+    </form>
+
 </body>
 
 </html>
