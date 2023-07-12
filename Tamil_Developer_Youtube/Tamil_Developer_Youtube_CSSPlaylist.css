@@ -6,6 +6,7 @@ body {
     /* width: 100%;
     height: 100%; */
     /* background-color: black; */
+    padding-top: 58px;
 }
 
 .transpareny_opacity {
@@ -449,3 +450,128 @@ legend {
 label, input {
     margin: 10px;
 }
+
+.headingThreeZIndex {
+    background-color: cadetblue;
+}
+
+.headingFourZIndex {
+    background-color: cornflowerblue;
+    position: relative;
+    left: 20px;
+    top: -40px;
+    z-index: 3;
+    /* margin-left: 20px;
+    text-indent:  20px; */
+}
+
+.paragraphZIndex {
+    background-color: darksalmon;
+    position: relative;
+    left: 40px;
+    top: -80px;
+}
+
+.headingThreeFixedPosition {
+    background-color:blue;
+    position: absolute; /* position property value can be fixed or absolute */
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    margin: 0px;
+}
+
+.floatProperty img {
+    float: left;
+    margin-right: 20px;
+}
+
+.services {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: khaki;
+}
+
+.service {
+    width: 30%;
+    float: left;
+    border: 3px solid red;
+    margin-right: 2.5%;
+    text-align: center;
+}
+
+.service img {
+    width: 100px;
+}
+
+.serviceBreak {
+    clear: both;
+}
+
+.twoColumnLayoutPage {
+    /* float: left; */        /* to move from previous div float property to another div */
+    width: 960px;       /* we can set as 960px or 1200px */
+    margin: 0 auto;
+}
+
+.twoColumnLayoutContent {
+    background-color: khaki;
+    padding: 20px;
+}
+
+.twoColumnLayoutMain {
+    width: 65%;
+    float: left;
+    margin-right: 5%;
+}
+
+.twoColumnLayoutSidenav {
+    width: 30%;
+    float: right;
+}
+
+.twoColumnLayoutBreak {
+    clear: both;
+}
+
+/* .twoColumnLayoutFooter {
+    clear: both;
+} */
+
+#threeColumnLayoutPage {
+    width: 960px;               /* width: 90% */
+    margin: 0 auto;
+    /* min-width: 768px or 960px; */
+}
+
+#threeColumnLayoutContent {
+    background-color: khaki;
+    padding: 20px;
+}
+
+#threeColumnLayoutLeftSidenav {
+    width: 30%;                 /* width: 20% or 150px */
+    float: left;
+    margin-right: 5%;           /* margin-right: 3% */
+}
+
+#threeColumnLayoutMain {
+    width: 30%;                 /* width: 50% */
+    float: left;
+    /* margin-right: 5%; */
+}
+
+#threeColumnLayoutRightSidenav {
+    width: 30%;                 /* width: 20% or 150px */
+    float: right;
+}
+
+#threeColumnLayoutBreak {
+    clear: left;
+}
+
+/* #threeColumnLayoutFooter {
+    clear: both;
+} */
