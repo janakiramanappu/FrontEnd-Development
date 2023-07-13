@@ -1,3 +1,8 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
 body {
     /* font-size: 16px; */
     /* font-size: 100%; */
@@ -575,3 +580,95 @@ label, input {
 /* #threeColumnLayoutFooter {
     clear: both;
 } */
+
+#cssSelectorsPage {
+    width: 960px;
+    margin: 0 auto;
+    border: 2px solid crimson;
+    padding: 20px;
+}
+
+/* a {
+    background-color: burlywood;
+}
+
+li a {
+    background-color: cornflowerblue;
+}
+
+ul a {
+    background-color: darkgray;
+}
+
+#cssSelectorsNav {
+    background-color: darkkhaki;
+} */
+
+.cssSelectorsImportant {
+    background-color: turquoise;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#cssSelectorsPage h3 + p {
+    background-color: slateblue;
+    margin: 0;
+}
+
+#cssSelectorsPage h3 ~ p {
+    font-style: italic;
+}
+
+#cssSelectorsNav li a {
+    color: hotpink;
+}
+
+#cssSelectorsNav > li > a {
+    color: lawngreen;
+}
+
+#cssAttributesSelector acronym, abbr {
+    color: yellow;
+    font-size: 20px;
+}
+
+#cssAttributesSelector [title] {
+    background-color: indianred;
+}
+
+#cssAttributesSelector img {
+    width: 50px;
+}
+
+#cssAttributesSelector a[href^="https"] {
+    text-decoration: underline;
+    color: violet;
+}
+
+#cssAttributesSelector a[target="_blank"] {
+    text-decoration: overline;
+    color: springgreen;
+}
+
+#cssAttributesSelector img[alt*="decorative"] {
+    border: 3px solid darkgreen;
+    padding: 10px;
+}
+
+#cssAttributesSelector img[alt~="nature"] {
+    border: 3px solid darkred;
+    padding: 10px;
+}
+
+#cssAttributesSelector a[href$=".pdf"] {
+    background: url('../assets/images/decorative-wall.jpg') no-repeat center right;
+    background-size: 20px;
+    /* background-color: sienna; */
+    padding-right: 25px;
+}
+
+#cssAttributesSelector a[href$=".doc"] {
+    background: url('../assets/images/Dog.jpg') no-repeat center right;
+    background-size: 20px;
+    padding-right: 25px;
+}
