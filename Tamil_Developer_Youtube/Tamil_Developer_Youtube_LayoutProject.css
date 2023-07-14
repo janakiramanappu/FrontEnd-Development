@@ -1,0 +1,111 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.layoutContainer {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.layoutContent {
+    background-color: khaki;
+    padding: 10px;
+}
+
+.layoutLeftSidebar {
+    width: 20%;
+    float: left;
+    margin-right: 3%;
+}
+
+.layoutMainContent {
+    width: 50%;
+    float: left;
+}
+
+.layoutRightSidebar {
+    width: 20%;
+    float: right;
+}
+
+.layoutBreak {
+    clear: both;
+}
+
+/* .layoutFooter {
+    clear: both;
+} */
+
+.layoutMainContent img {
+    width: 50px;
+}
+
+.layoutServices {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.layoutServices1 {
+    border: 3px solid crimson;
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+}
+
+.layoutServices2 {
+    border: 3px solid crimson;
+    width: 30%;
+    float: left;
+}
+
+.layoutServices3 {
+    border: 3px solid crimson;
+    width: 30%;
+    float: right;
+}
+
+.layoutGallary {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.layoutGallary1 div, .layoutGallary2 div {
+    background-color: lightgray;
+    color: lightslategray;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 4px;
+    text-align: center;
+    display: inline-block;
+}
+
+.layoutGallaryBlock {
+    position: relative;
+    top: 40%;
+    left: 0%;
+}
+
+.layoutContactForm fieldset {
+    border: 3px solid tomato;
+}
+
+.layoutContactForm legend {
+    background-color: brown;
+    padding: 10px;
+}
+
+.layoutContactForm input, textarea {
+    margin-bottom: 15px;
+    border: 2px solid slateblue;
+    border-radius: 0px;
+    outline: 0px;
+    padding: 5px 10px;
+}
+
+.layoutContactForm button {
+    border: 2px solid springgreen;
+    padding: 5px 10px;
+}
