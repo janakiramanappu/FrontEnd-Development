@@ -191,7 +191,7 @@ function logName_var() {
         var y_var = 1000;
         console.log(t_var, p_var, y_var);
     }
-    console.log(t_var, p_var, y_var);
+    console.log("print the variables using var keyword", t_var, p_var, y_var);
 }
 console.log(t_var);
 logName_var();
@@ -224,6 +224,214 @@ function logName_const() {
 console.log(t_const);
 logName_const();
 console.log(t_const);
+
+// Coercion
+
+numberValue = 42;
+stringEmpty = '';
+stringValue = '0';
+result = numberValue + stringEmpty;
+result1 = numberValue + stringValue;
+console.log(result, typeof (result), "-", result1, typeof (result1));
+
+numberTwo = '7';
+result2 = numberValue - numberTwo;
+console.log(result2, typeof (result2));
+
+// Logical operator return values
+
+const logi = 42;
+const logi_1 = 'JVLCode';
+const logi_2 = null;
+
+console.log(logi && logi_1, "-", logi_1 && logi_2, "-", logi_2 && logi);
+console.log(logi_1 && logi, logi_2 && logi_1, logi && logi_2);
+
+console.log(logi || logi_1, logi_1 || logi_2, logi_2 || logi);
+console.log(logi_1 || logi, logi_2 || logi_1, logi || logi_2);
+
+function logicalGreet(name) {
+    console.log(`Hello ${name || 'visitor'}!`);
+}
+logicalGreet();
+logicalGreet('Logesh');
+
+// Equality Operator == and Strict Equality Operator ===
+
+console.log(42 == '42');
+console.log(42 === '42');
+console.log(42 === '32');
+
+// Closure - function within function
+
+function outer() {
+    var b_outer = 20;
+    function inner() {
+        var a_inner = 10;
+        console.log("The closure that is function within function", a_inner + b_outer);
+    }
+    return inner;
+}
+
+let someFn = outer();
+someFn();
+
+// this keyword - access the object properties
+
+function createCharacter(name_1) {
+    return {
+        name_1,
+        greet: function () {
+            console.log(`${this.name_1} says hello!!`);
+        },
+    }
+}
+
+const character = createCharacter('Appu');
+character.greet();
+
+const { greet } = createCharacter('John');
+greet();
+
+// new keyword
+
+function CharacterClass(name_class) {
+    this.name_class = name_class;
+}
+
+const character_class = new CharacterClass('Dravid');
+console.log("The class new keyword", character_class);
+
+// Prototypes
+
+const avengers = {
+    attack: function () {
+        console.log('Swing!!');
+    },
+}
+
+const fighter = {
+    name: 'Hulk',
+    __proto__: avengers,
+}
+
+fighter.attack();
+
+function Avengersmarvel(name_marvel) {
+    this.name_marvel = name_marvel;
+    this.attack_1 = function () {
+        console.log(`${this.name_marvel} Swings!!`);
+    }
+}
+
+function Fightermarvel(name_marvel) {
+    this.name_marvel = name_marvel;
+}
+
+Fightermarvel.prototype = new Avengersmarvel();
+
+const fightermarvel = new Fightermarvel('Ironman');
+fightermarvel.attack_1();
+
+// class
+
+class Charac {
+    constructor(name_2) {
+        this.name_2 = name_2;
+    }
+    attack_2() {
+        console.log(`${this.name_2} attacks!!`);
+    }
+}
+
+class Fight extends Charac {
+    constructor(name_2) {
+        super(name_2);
+    }
+}
+
+const figh = new Fight('Captain America');
+figh.attack_2();
+
+// Javascript Tips - Convert to Boolean
+
+const array_1 = ['a', 'b', 'c'];
+console.log(array_1, array_1.length);
+if (array_1.length > 0) {
+    console.log("Array_1 is not empty");
+} else {
+    console.log("Array_1 is empty");
+}
+console.log(array_1.length > 0);
+
+if (!!array_1) {
+    console.log("Array_1 is not empty");
+} else {
+    console.log("Array_1 is empty");
+}
+console.log(!!array_1);
+
+const array_2 = ['d', 'e', 'f'];
+console.log(array_2, array_2.length);
+if (!!array_2.length) {
+    console.log("Array_2 is not empty");
+} else {
+    console.log("Array_2 is empty");
+}
+console.log(!!array_2.length);
+
+const array_3 = [];
+console.log(array_3, array_3.length);
+if (!!array_3.length) {
+    console.log("Array_3 is not empty");
+} else {
+    console.log("Array_3 is empty");
+}
+console.log(!!array_3.length);
+
+// Javascript Tips - 3 ways to copy array
+
+var cities = ['trichy', 'salem', 'madurai'];
+
+var cities_copy = cities;
+console.log(cities, cities_copy);
+
+cities.push('namakkal');
+console.log(cities, cities_copy);
+
+cities_copy.push('pondy');
+console.log(cities, cities_copy);
+
+// 1. copy with slice
+
+var fruits_1 = ['apple', 'banana', 'mango'];
+var fruits_1_copy = fruits_1.slice(0);
+fruits_1.push('grapes');
+fruits_1_copy.push('pineapple');
+console.log(fruits_1, fruits_1_copy);
+
+// 2. copy with concat
+
+var fruits_2 = ['cherry', 'guava', 'watermelon'];
+var fruits_2_copy = [].concat(fruits_2);
+fruits_2.push('lemon');
+fruits_2_copy.push('dried fruits');
+console.log(fruits_2, fruits_2_copy);
+
+// 3. copy with spread operator
+
+var fruits_3 = ['papaya', 'strawberry', 'kiwi'];
+var fruits_3_copy = [...fruits_3];
+fruits_3_copy.push('plum', 'pleach');
+fruits_3.push('pear');
+console.log(fruits_3, fruits_3_copy);
+
+// push method
+
+var vegetables = ['carrot', 'potato', 'tomato'];
+console.log("The length of vegetables array is", vegetables.push('beans'));
+vegetables.push('cabbage', 'brinjal');
+console.log("The vegetables array is updated by adding some items", vegetables);
 
 // Array Data Methods - Map and Filter
 // map - array data we can change it to another data, from an array we can take a property value
