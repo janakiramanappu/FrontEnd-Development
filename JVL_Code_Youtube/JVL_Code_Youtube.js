@@ -463,3 +463,130 @@ console.log(filterData);
 
 // Splice and Slice
 
+const data_splice = ['car', 'bus', 'helicopter', 'train'];
+
+const removedArray = data_splice.splice(1, 2);
+
+console.log(removedArray);
+console.log(removedArray, "", data_splice, "", removedArray == data_splice);
+console.log(data_splice.splice(0, 1), data_splice);
+
+const data_slice = ['taxi', 'lorry', 'bicycle', 'auto'];
+
+const getSliceArray = data_slice.slice(0, 2);
+
+console.log(getSliceArray, "", data_slice, "", getSliceArray == data_slice);
+console.log(data_slice.slice(1, 4), data_slice);
+
+// concat
+
+const array_concat1 = [1, 2, 3, 4, 5];
+const array_concat2 = [6, 7, 8, 9, 10];
+const array_concat3 = [11, 12, 13, 14, 15];
+
+const concatArray = array_concat1.concat(array_concat2);
+
+console.log(concatArray, "-", array_concat1.concat(array_concat2, array_concat3));
+
+// find and findIndex
+
+const dataIndex = [
+    { id: 1, title: "first" },
+    { id: 2, title: "second" },
+    { id: 3, title: "third" },
+    { id: 4, title: "fourth" },
+];
+
+const itemFindIndex = dataIndex.findIndex((elem) => {
+    return elem.id == "2";
+})
+
+const itemFindIndex_1 = dataIndex.findIndex((elem_1) => {
+    return elem_1.id == 2;
+})
+
+const itemFindIndex_2 = dataIndex.findIndex((elem_2) => {
+    return elem_2.title == "third";
+})
+
+console.log(itemFindIndex, itemFindIndex_1, itemFindIndex_2);
+
+const itemFind = dataIndex.find((ele_item) => {
+    return ele_item.title == "fourth";
+})
+
+console.log(itemFind);
+
+// Destructuring - using arrays and objects
+
+const personName = ["Virat", "Rohit"];
+
+const firstName = personName[0];
+const lastName = personName[1];
+
+console.log("The person name array is", personName, "The first name is", firstName, "The last name is", lastName);
+
+const [firstPersonName, lastPersonName] = personName;
+console.log("The person name array is", personName, "The first person name is", firstPersonName, "The last person name is", lastPersonName);
+
+const personNameObject = {
+    id: 1,
+    name: "jack sparrow",
+    loveWar: true,
+    species: "alien",
+};
+
+console.log(personNameObject);
+
+const { name, species } = personNameObject;
+console.log("The person name object is", name, "The person species is", species);
+
+const { name: person_name, species: person_species } = personNameObject;
+console.log("The person name is", person_name, "The person species is", person_species);
+
+// spread operator and rest operator
+
+const introduction = ["my", "name", "is ", "john"];
+
+const spreadArray = [...introduction];
+
+console.log("THe introduction array", introduction);
+console.log("The spread array", spreadArray);
+
+console.log(spreadArray, introduction, spreadArray == introduction);
+
+// Promise with async and await
+
+const fetchData = async () => {
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/todos");
+        console.log(response.ok);
+        if (!response.ok) throw new Error(response.status);
+        const result_data = await response.json();
+        return result_data;
+    } catch (e) {
+        console.log("The catch block within", e);
+        // return "error occurred";
+    }
+};
+
+fetchData().then((result_fetchData) => {
+    console.log(result_fetchData);
+}).catch((err) => {
+    console.log(err);
+}).finally(() => {
+    console.log("request finished!!");
+})
+
+// callback function
+
+function myDisplayer(something) {
+    console.log("The callback function", something);
+}
+
+function myCalculation(num1, num2, myCallback) {
+    let sum = num1 + num2;
+    myCallback(sum);
+}
+
+myCalculation(10, 20, myDisplayer);
