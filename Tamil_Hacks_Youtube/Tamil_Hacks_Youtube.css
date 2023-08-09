@@ -164,10 +164,10 @@ div :is(.flexbox_first, .flexbox_second, .flexbox_third) {
 @media (min-width: 550px) {
     .container_flexbox {
         display: flex;
-        align-items: center;
+        align-items: center;        /* align-items property to align the items vertically */
     }
     .container_flexbox_first {
         display: flex;
-        justify-content: center;
+        justify-content: center;    /* justify-content property to align the items horizontally */  
     }
 }

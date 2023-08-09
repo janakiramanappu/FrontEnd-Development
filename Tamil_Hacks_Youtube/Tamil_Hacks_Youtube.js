@@ -31,9 +31,9 @@ console.log(apple + "" + Apple);
 console.log(apple + Apple);
 
 if (apple === Apple) {
-    console.log("Both are same");
+    console.log("Both value and datatype are same");
 } else {
-    console.log("Both are different");
+    console.log("Both value and datatype are different");
 }
 
 var num1 = 10;
@@ -129,7 +129,7 @@ switch (samp) {
         break;
     }
     case 'blue': {
-        console.log("Red Color");
+        console.log("Blue Color");
         break;
     }
     default: {
@@ -186,17 +186,3 @@ console.log(carbrand_first.carname + " " + carbrand_first["cartype"] + " " + car
 
 // JavaScript - 3 hour course
 
-
-
-// JavaScript Interview Questions - Simplilearn
-
-// Removing Duplicates
-
-let arrDuplicate = ['a', 'b', 'c', 'a', 'b', 'd'];
-
-let call = arrDuplicate.filter((c, index) => {
-    console.log(c, " ", index, " ", arrDuplicate.indexOf(c));
-    return arrDuplicate.indexOf(c) == index;
-});
-
-console.log(call);
