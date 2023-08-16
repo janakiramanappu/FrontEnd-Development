@@ -220,3 +220,91 @@ console.log('Hello, my name is ' + humanName);
 console.log('Hello, my name is', humanName);
 
 console.log("My name is", humanName, 'and my salary is', salary);
+
+console.log(document.title);
+
+console.log(alert("This is an alert in-built function"));
+
+alert("my salary is", salary);
+
+alert('my salary is ' + salary);
+
+// functions - Reusability
+function Welcome(humanName) {
+    console.log("welcome onboard!!", humanName);
+    alert("Welcome onboard!!", humanName);
+}
+
+Welcome(humanName);
+Welcome("Abdul");
+
+// Objects
+
+var PersonName = "panda";
+var PersonType = 'animal';
+
+function checkBeings(PersonName, PersonType) {
+    console.log("This is", PersonName, "which is an", PersonType);
+}
+
+checkBeings(PersonName, PersonType);
+
+// user defined object
+var PersonBeings = {
+    PerName: 'cody',
+    PerProfession: "cricket",
+    PerPassion: 'animation',
+    perSkills() {
+        var perHobby = "pencil sketching";
+        var perSkillsMsg = 'my hobby is ' + perHobby;
+        return perSkillsMsg;
+    },
+    per_Skills() {
+        var per_Hobby = 'animation';
+        console.log('My hobby is ' + per_Hobby);
+    },
+    perFood: {
+        favFood: 'Dosa',
+        nonfavFood: 'nothing',
+    }
+}
+
+console.log(PersonBeings)
+console.log(PersonBeings.PerName, PersonBeings.PerProfession, PersonBeings.PerPassion);
+console.log("Calling function inside objects", PersonBeings.perSkills());
+PersonBeings.per_Skills();
+console.log(PersonBeings.perFood);
+console.log(PersonBeings.perFood.favFood, PersonBeings.perFood.nonfavFood);
+
+// Arrays
+
+var bikeColor = ['red', 'green', 'black', 'blue'];
+var bikeModel = [1234, 66, 224567, 112, 95];
+var bike = [
+    { color: 'grey', model: 3884 },
+    { color: 'white', model: 0801 }
+]
+
+console.log(bikeColor);
+console.log(bikeModel);
+console.log(bike);
+
+console.log(bikeColor[2], bikeColor[0]);
+console.log(bikeModel[1], bikeModel[3]);
+console.log(bike[0], bike[1]);
+console.log(bike[0].color, bike[0].model, bike[1].color, bike[1].model);
+
+console.log(bikeColor);
+bikeColor.push('yellow');
+console.log(bikeColor);
+
+// bikeColor.sort();
+// console.log(bikeColor);
+console.log(bikeColor.sort());
+
+// bikeColor.reverse();
+// console.log(bikeColor);
+console.log(bikeColor.reverse())
+
+console.log(bikeModel.sort());
+console.log(bikeModel.reverse());
