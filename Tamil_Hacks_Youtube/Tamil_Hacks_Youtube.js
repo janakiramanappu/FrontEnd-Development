@@ -186,3 +186,37 @@ console.log(carbrand_first.carname + " " + carbrand_first["cartype"] + " " + car
 
 // JavaScript - 3 hour course
 
+console.log(2 + 5);
+console.log(8 * 8);
+
+console.log(2 * 2);
+console.log("The addition of both numbers in single quotes is", '2' + '2');
+console.log('The Subtraction of both numbers in double quotes is', "2" - "2");
+console.log("The Multiplication of both numbers in single quotes is", '2' * '2');
+console.log('The Division of both numbers in double quotes is', "2" / "2");
+console.log("The Modulo of both numbers in single quotes is", '2' % '2');
+
+console.log("Combination of both single & double quotes", "10" + '2');
+
+console.log('9' + 2);
+console.log('9' - 2);
+console.log('9' * 2);
+console.log('9' / 2);
+console.log('9' % 2);
+
+console.log(10 + '5');
+console.log(10 - '5');
+console.log(10 * '5');
+console.log(10 / '5');
+console.log(10 % '5');
+
+var salary = 25000;
+console.log(salary);
+console.log(salary + 5000);
+
+var humanName = 'peter';
+console.log(humanName);
+console.log('Hello, my name is ' + humanName);
+console.log('Hello, my name is', humanName);
+
+console.log("My name is", humanName, 'and my salary is', salary);
