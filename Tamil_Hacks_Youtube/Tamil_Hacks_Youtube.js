@@ -308,3 +308,26 @@ console.log(bikeColor.reverse())
 
 console.log(bikeModel.sort());
 console.log(bikeModel.reverse());
+
+// Conditional Statements - Ternary Operators
+
+var personAge = 16;
+if (personAge >= 18) {
+    console.log("Yes you can register");
+}
+else {
+    console.log("No you can't register minimum age is 18");
+}
+
+var person_Age = personAge >= 18 ? 'can register' : "can't register";
+console.log(person_Age);
+
+// loops
+
+countNum = 0;
+while (countNum < 5) {
+    console.log("Print numbers in the browsers console section of open developers tools", countNum);
+    document.writeln("Print the numbers inside the browser ", countNum);
+    window.alert("Print the numbers inside the alert pop-up boxes " + countNum);
+    countNum++;
+}
