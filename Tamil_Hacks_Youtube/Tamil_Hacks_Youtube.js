@@ -276,7 +276,7 @@ PersonBeings.per_Skills();
 console.log(PersonBeings.perFood);
 console.log(PersonBeings.perFood.favFood, PersonBeings.perFood.nonfavFood);
 
-// Arrays
+// Arrays - using string, number, array of objects
 
 var bikeColor = ['red', 'green', 'black', 'blue'];
 var bikeModel = [1234, 66, 224567, 112, 95];
@@ -322,12 +322,158 @@ else {
 var person_Age = personAge >= 18 ? 'can register' : "can't register";
 console.log(person_Age);
 
-// loops
+// loops - display data in different ways as an output
 
-countNum = 0;
+var countNum = 0;
 while (countNum < 5) {
     console.log("Print numbers in the browsers console section of open developers tools", countNum);
-    document.writeln("Print the numbers inside the browser ", countNum);
-    window.alert("Print the numbers inside the alert pop-up boxes " + countNum);
     countNum++;
 }
+
+let countNum_1 = 0;
+do {
+    window.alert("Print the numbers inside the alert pop-up boxes " + countNum_1);
+    countNum_1++;
+}
+while (countNum_1 <= 3);
+
+var i;
+for (i = 0; i < 10; i++) {
+    document.write("Print the numbers inside the browser ", i);
+    document.writeln();
+}
+
+// if (personAge >= 18) {
+//     // console.log(personAge+" "+person_Age);
+//     console.log(document.getElementById('displayDataOutput').innerHTML);
+//     // console.log(personAge + " is an age for major after 18");
+// } else {
+//     // console.log(personAge+" "+person_Age);
+//     document.getElementById('displayDataOutput').innerHTML = "e";
+//     //personAge + " is an age for minor before 18";
+//     // console.log(personAge + " is an age for minor before 18");
+// }
+
+// Functions - normal, arrow, high order function (user defined function & built-in function)
+
+var numberParaArg = 10;
+
+// normal function
+function add() {
+    console.log(2 + 8);
+}
+
+function addParaArg(numberParaArg) {
+    console.log(numberParaArg * 5);
+}
+
+add();
+addParaArg(numberParaArg);
+
+function add_1() {
+    return (9 * 8);
+}
+
+function addParaArg_1(numberParaArg) {
+    return numberParaArg * 6;
+}
+
+console.log(add_1());
+console.log(addParaArg_1(numberParaArg));
+
+// Arrow function
+add_2 = () => {
+    return (5 - 4);
+}
+
+addParaArg_2 = (numberParaArg) => {
+    return numberParaArg * 7;
+}
+
+console.log(add_2());
+console.log(addParaArg_2(numberParaArg));
+
+add_3 = () => (10 / 8);
+
+addParaArg_3 = (numberParaArg) => numberParaArg * 8;
+
+console.log(add_3());
+console.log(addParaArg_3(numberParaArg));
+
+// Higher order function - User defined function
+var numHighOrder = 100;
+
+function twoX(numHighOrder) {
+    return 2 * numHighOrder;
+}
+
+function threeX(numHighOrder) {
+    return 3 * numHighOrder;
+}
+
+console.log(twoX(numHighOrder));
+console.log(threeX(numHighOrder));
+
+function multiplyHighOrder(whichNumber) {
+    return function (valueHighOrder) {
+        return valueHighOrder * whichNumber;
+    }
+}
+
+var twox = multiplyHighOrder(2);
+var threex = multiplyHighOrder(3);
+console.log(twox(8));
+console.log(threex(8));
+
+// High order function - Built-in function like push, forEach
+let bike_Color = ['red', 'blue', 'green', 'yellow', 'brown'];
+
+console.log(bike_Color);
+
+bike_Color.push('pink');
+
+console.log(bike_Color);
+
+bike_Color.forEach(availability)
+
+function availability(bike_col) {
+    console.log("The bike color " + bike_col + " is found");
+}
+
+// Higher order function - Array of Objects using map it will return an output in the form of array
+
+var bikes = [
+    { brand: 'nike', brandType: 'shoe', cost: 5000 },
+    { brand: 'jockey', brandType: 'dress wear', cost: 6000 },
+    { brand: 'hero', brandType: 'vehicle', cost: 9000 }
+];
+
+bikes_Data = (bikesData) => bikesData.brand;
+var bikes_Result = bikes.map(bikes_Data);
+console.log(bikes_Result);
+
+function bikes_DataNormal(dataNormal) {
+    return dataNormal.brandType;
+}
+var bikes_ResultNormal = bikes.map(bikes_DataNormal);
+console.log(bikes_ResultNormal);
+
+// var bikes_Res = bikes.map(bikes_Data).map(bikes_DataNormal);    // it will display as undefined
+var bikes_Res = bikes.map(bikes_DataNormal, bikes_Data);           // it will take only the first parameter value as an output
+console.log(bikes_Res);
+
+// High order function - Array of Objects using filter it will return an output in the form of array
+
+console.log("Before adding the new object into an array", bikes);
+
+bikes.push({ brand: 'lifebuoy', brandType: 'soap', cost: 6900 });
+
+console.log(bikes);
+
+bikes_Filter = (bikesFilter) => bikesFilter.cost <= 7000;
+var bikes_ResultFilter = bikes.filter(bikes_Filter);
+console.log(bikes_ResultFilter);
+
+bikes_FilterMore = (bikesFilterMore) => bikesFilterMore.brandType == 'soap';
+var bikes_ResultMoreFilter = bikes.filter(bikes_Filter).filter(bikes_FilterMore);
+console.log(bikes_ResultMoreFilter);
