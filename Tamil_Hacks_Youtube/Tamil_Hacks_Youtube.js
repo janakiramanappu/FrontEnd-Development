@@ -477,3 +477,121 @@ console.log(bikes_ResultFilter);
 bikes_FilterMore = (bikesFilterMore) => bikesFilterMore.brandType == 'soap';
 var bikes_ResultMoreFilter = bikes.filter(bikes_Filter).filter(bikes_FilterMore);
 console.log(bikes_ResultMoreFilter);
+
+// Scopes
+// First way
+let name_scope = 'david';
+
+console.log("Printing outside a function", name_scope);
+
+function printScope() {
+    console.log("Printing inside a function " + name_scope);
+}
+
+function printScope_1(name_scope) {
+    console.log("Printing inside a function with parameters and arguments", name_scope);
+}
+
+printScope();
+printScope_1(name_scope);
+
+// Second way
+// we will get error like Uncaught SyntaxError: Identifier 'name_scope_1' has already been declared at line 503
+// console.log("Printing outside a function " + name_scope_1)
+
+// function printScope_2(name_scope_1) {
+//     let name_scope_1 = "Helen";
+//     console.log("Printing inside a function", name_scope_1);
+// }
+
+// console.log("Printing outside a function " + name_scope_1);
+
+// printScope_2(name_scope_1);
+
+// we can get the error like Uncaught ReferenceError: name_scope_2 is not defined
+// function printScope_3(name_scope_3) {
+//     let name_scope_2 = "Mark";
+//     console.log("Printing inside a function " + name_scope_3);
+// }
+
+// printScope_3(name_scope_2);
+
+// Third way - you can try to change the let keyword with var in below code
+// let (outside function), let (function scope), let (block scope) - will execute in the order outside function, block scope, function scope
+// let, let, var - Uncaught SyntaxError: Identifier 'character' has already been declared at 533
+// let, var, let - will execute in the order outside function, block scope, function scope
+// let, var, var - will execute in the order outside function (outside function variable value), block scope (block scope variable value), function scope (block scope variable value)
+// var (outside function), var (function scope), var (block scope) - will execute in the order outside function (outside function variable value), block scope (block scope variable value), function scope (block scope variable value)
+// var, var, let - will execute in the order outside function, block scope, function scope
+// var, let, var - Uncaught SyntaxError: Identifier 'character' has already been declared at 533
+// var, let, let - will execute in the order outside function, block scope, function scope
+var character = 'captain america';
+
+function marvelAvengers() {
+    let character = 'iron man';
+    if (true) {
+        let character = 'black widow';
+        console.log("Printing inside the block scope " + character);
+    }
+    console.log("Printing inside the function scope " + character);
+}
+
+console.log("Printing outside the function and block scope", character);
+
+marvelAvengers();
+
+// Context - Objects, this, call method using object
+
+let nameContext = {
+    firstName: 'Sam',
+    lastName: 'Anderson',
+    isCoding() {
+        console.log(nameContext.firstName + " " + nameContext.lastName);
+    },
+    isCoding_1() {
+        console.log(this.firstName + " " + this.lastName);
+    }
+}
+
+nameContext.isCoding();
+nameContext.isCoding_1();
+console.log(nameContext.firstName, this.firstName);
+
+function isPlaying() {
+    console.log(this.firstName + " " + this.lastName);
+}
+
+isPlaying();
+isPlaying.call(nameContext);
+
+// Some tricks and tips - Anonymous function
+
+let numberArray = [10, 20, 30, 40, 50];
+
+numberArrayAdd = (number_Array_Add) => number_Array_Add + 1;
+
+console.log(numberArray.map(numberArrayAdd));
+// console.log(numberArray.map((number_Array_Add) => number_Array_Add + 1);
+
+let numberArray_1 = [60, 70, 80, 90, 100];
+numberArray_1.forEach(function (numberArraySum) {
+    console.log(numberArraySum += 1);
+});
+console.log(numberArray_1);
+
+let adultName = 'tilak';
+console.log("Hi myself " + adultName + " and i'm a cricketer");
+console.log(`Hi myself ${adultName} and i'm a cricketer`);
+
+let adultAge = 28
+console.log(`${adultAge}`)
+
+let adultAge_1 = 38;
+console.log(`${adultAge_1}`);
+
+let adultAge_2 = 48; console.log(`${adultAge_2}`);
+// let adultAge_2 = 48; console.log(`${adultAge_2}`)
+
+// let adultAge_3 = 58 console.log(`${adultAge_3}`);   // Uncaught SyntaxError: Unexpected identifier 'console'
+
+// Small To-Do Application
