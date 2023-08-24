@@ -171,3 +171,7 @@ div :is(.flexbox_first, .flexbox_second, .flexbox_third) {
         justify-content: center;    /* justify-content property to align the items horizontally */  
     }
 }
+
+#todoCreateButton, #todoDeleteButton {
+    float: none;
+}

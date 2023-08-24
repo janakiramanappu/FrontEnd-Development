@@ -5,7 +5,7 @@ Internal JavaScript file, use it inside body tag */
 
 // script tag - use it inside or within the head and body opening & closing tags
 
-alert("This is an alert message from External Javascript file")
+// alert("This is an alert message from External Javascript file")
 
 // DataTypes - Number,String,Arrays,Objects - Don't need to define the datatype it will fetch according to value
 var num = 10; // variable num will consider as a number datatype
@@ -13,12 +13,12 @@ var num = 10; // variable num will consider as a number datatype
 var fruit = "Apple"; // String values will be inside single or double quotes
 var m = 'a';
 
-alert(num + " " + fruit + " " + m);
+// alert(num + " " + fruit + " " + m);
 
 // Variables types - letters,numbers,underscore(_),dollarsign($)
 var name_1 = "john";
 console.log(name_1); // console.log will print the output in the browser developer tools of console section.
-alert("The name is " + name_1)
+// alert("The name is " + name_1)
 
 var $age_1 = 10;
 console.log($age_1);
@@ -223,16 +223,16 @@ console.log("My name is", humanName, 'and my salary is', salary);
 
 console.log(document.title);
 
-console.log(alert("This is an alert in-built function"));
+// console.log(alert("This is an alert in-built function"));
 
-alert("my salary is", salary);
+// alert("my salary is", salary);
 
-alert('my salary is ' + salary);
+// alert('my salary is ' + salary);
 
 // functions - Reusability
 function Welcome(humanName) {
     console.log("welcome onboard!!", humanName);
-    alert("Welcome onboard!!", humanName);
+    // alert("Welcome onboard!!", humanName);
 }
 
 Welcome(humanName);
@@ -332,7 +332,7 @@ while (countNum < 5) {
 
 let countNum_1 = 0;
 do {
-    window.alert("Print the numbers inside the alert pop-up boxes " + countNum_1);
+    // window.alert("Print the numbers inside the alert pop-up boxes " + countNum_1);
     countNum_1++;
 }
 while (countNum_1 <= 3);
@@ -594,4 +594,38 @@ let adultAge_2 = 48; console.log(`${adultAge_2}`);
 
 // let adultAge_3 = 58 console.log(`${adultAge_3}`);   // Uncaught SyntaxError: Unexpected identifier 'console'
 
-// Small To-Do Application
+// Simple To-Do Application
+
+let todoMyForm = document.getElementById('todoMyForm');
+console.log("My form is", todoMyForm);
+let todoMyInput = document.getElementById('todoMyInput');
+console.log("My input is", todoMyInput);
+let todoMyList = document.getElementById('todoMyList');
+console.log("My list is", todoMyList);
+
+// todoMyForm.addEventListener('click', () => {
+//     console.log('This is my form');
+// })
+
+// todoMyForm.addEventListener('click', todoClick);
+// function todoClick() {
+//     console.log('This is also todoClick');
+// }
+
+todoMyForm.addEventListener('submit', (data) => {
+    data.preventDefault();
+    console.log(todoMyInput.value);
+    todoCreate(todoMyInput.value);
+    todoMyInput.value = '';
+    todoMyInput.focus();
+})
+
+todoCreate = (todoInputData) => {
+    let todoMyTemplate = `<li>${todoInputData}&ensp;<button id="todoDeleteButton" onclick="todoDelete(this)">Delete</button></li>&nbsp;`;
+    todoMyList.insertAdjacentHTML('beforeend', todoMyTemplate);
+}
+
+todoDelete = (todoInputDataDelete) => {
+    console.log("Delete list is clicked!!");
+    todoInputDataDelete.parentElement.remove();
+}
