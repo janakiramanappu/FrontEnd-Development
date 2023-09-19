@@ -294,3 +294,69 @@ console.log('Outside the if block scope')
 console.log(a_var);                     // 40
 // console.log(b_const);                // Uncaught ReferenceError: b_const is not defined
 // console.log(c_let);                  // Uncaught ReferenceError: c_let is not defined
+
+// Hoisting
+
+console.log(hoist_a);
+// console.log(hoist_b);                // Uncaught ReferenceError: Cannot access 'hoist_b' before initialization
+// console.log(hoist_c);                // Uncaught ReferenceError: Cannot access 'hoist_c' before initialization
+
+var hoist_a = 71;
+const hoist_b = 72;
+let hoist_c = 73;
+
+// Closures
+
+let person_name = 'raj';
+function personName() {
+    console.log(person_name);
+}
+personName();
+
+function outsideFunction() {
+    let person_age = 38;
+    const person_height = 5.3;
+    var person_weight = 60;
+    var message = 'personal details'
+    console.log(`Outside function ${person_age}, ${person_height}, ${person_weight}, ${message}`);
+    return function insideFunction() {
+        console.log(`inside function ${person_age}, ${person_height}, ${person_weight}, ${message}`);
+    }
+}
+
+outsideFunction();
+var funcOutsideInside = outsideFunction();
+funcOutsideInside();
+
+// setTimeout, setInterval, clearTimeout, clearInterval
+
+setTimeout(() => {
+    console.log("Hi-Late");
+}, 5000);
+
+console.log("Hi-Suddenly");
+
+number = 1;
+setInterval(() => {
+    console.log(number++);
+}, 2000);
+
+num = 100;
+const id1 = setTimeout(() => {      // setTimeout after some interval of time, output will be displayed once at a particular time
+    console.log(num++);
+}, 3000);
+clearTimeout(id1);
+
+const id2 = setInterval(() => {
+    console.log("Helloo");
+}, 4000);
+clearInterval(id2);
+
+num_1 = 200;
+const id_1 = setTimeout(() => {     // using setTimeout here will display output once at set timout - one operation, 
+    // but using setInterval will display output continuously after the set interval of time - multiple operation
+    console.log(num_1++);
+    if (num_1 > 205) {
+        clearInterval(id_1);
+    }
+}, 1000);
