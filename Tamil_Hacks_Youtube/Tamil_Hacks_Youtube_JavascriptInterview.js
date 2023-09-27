@@ -360,3 +360,163 @@ const id_1 = setTimeout(() => {     // using setTimeout here will display output
         clearInterval(id_1);
     }
 }, 1000);
+
+// setTimeout is used to call as callback -> Endha time mudhuchona idhu nadakathu (some operation nadakum)
+// callback
+const formData = document.getElementById("userFormDetails");
+const username = document.getElementById("uname");
+const password = document.querySelector("#upass");
+const response = document.querySelector("#response");
+
+// console.log(username);
+// console.log(password);
+
+// console.log(username.value);
+// console.log(password.value);
+
+let userData = null;
+
+const showResponse = function (userData) {
+    response.innerHTML = userData;
+}
+
+// hardcode values - normal way to check without callback
+// const loginVerify = function (name, pass) {
+//     if (name == "tom" && pass == "jerry") {
+//         // return "Login Success!!";
+//         // console.log("Login success!!");
+//         userData = "Login Success!!";
+//         return userData;
+//     } else {
+//         // return "Invalid value";
+//         // console.log("Invalid value");
+//         userData = "Invalid value";
+//         return userData;
+//     }
+// }
+
+// hardcode values - check using callback and setTimeout
+// const loginVerify = function (name, pass, callback) {
+//     setTimeout(() => {
+//         if (name == "tom" && pass == "jerry") {
+//             userData = "Login success using callback!!";
+//             // return userData;
+//             callback(userData);
+//         } else {
+//             userData = "Invalid value using callback";
+//             // return userData;
+//             callback(userData);
+//         }
+//     }, 2000);
+// }
+
+// using promise, resolve, reject, then, catch
+const loginVerify_1 = function (name, pass) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (name == "tommy" && pass == "yummy") {
+                userData = "Login success using promise!!";
+                resolve(userData);
+            } else {
+                error = "Invalid using using promise";
+                reject(userData);
+            }
+        }, 2500);
+    });
+}
+
+formData.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // const usernamee = document.getElementById("uname").value;
+    // console.log(usernamee);
+    // console.log(username.value);
+    // console.log(password.value);
+    // loginVerify(username.value, password.value);
+    // let data = loginVerify(username.value, password.value);
+    // showResponse(data);
+
+    // loginVerify(username.value, password.value, showResponse);
+
+    // loginVerify_1(username.value, password.value).then((userData) => {
+    //     showResponse(userData);
+    // }).catch((error) => {
+    //     showResponse(error);
+    // });
+
+    // async, await, try, catch
+    async function loginVerify_2() {
+        // await loginVerify_1(username.value, password.value); // displaying some errors like uncaught promise for unmatching values
+        // because if await it is outside the try block it won't have any way to happen any errors, that why we need to put inside the try block
+        // so for success it will take response from try block and for any failures it will take response from catch block 
+        try {
+            await loginVerify_1(username.value, password.value);
+            // showResponse(userData);
+            showResponse("Login success using async and await!!");
+        }
+        catch {
+            // showResponse(error);
+            showResponse("Invalid value using async and await");
+        }
+    }
+
+    loginVerify_2();
+})
+
+// Example of async and await
+//     <script>
+//     let name = "John";
+
+// const login_1 = function () {
+//     if (name == "John") {
+//         let data = document.getElementById("demo").innerHTML = "John is present";
+//     } else {
+//         let data = document.getElementById("demo").innerHTML = "John is not present";
+//     }
+// }
+
+// async function login() {
+//     try {
+//         await login_1()
+//         document.write(data);
+//     }
+//     catch (err) {
+//         document.write(data);
+//     }
+// }
+// login();
+// </script>
+
+// Event Loops - in which order the function will get executed
+
+const welcomee = () => console.log("welcomee function in event loops");
+const load = () => setTimeout(() => console.log('Load function in event loops'))
+const onefunction = () => console.log("one function in event loops");
+
+welcomee();
+load();
+onefunction();
+
+let eventloops_a = true;
+let eventloops_c = 0;
+
+setTimeout(() => {
+    console.log("Event Loops Hi");
+    eventloops_a = false;
+}, 2000);
+
+// setTimeout(() => {
+//     console.log("Event Loops Hi");
+//     clearInterval(eventloops_d);
+// }, 2000);
+
+setInterval(() => {
+    if (eventloops_a) {
+        console.log('Event Loops Hello');
+        console.log(eventloops_c++);
+    }
+}, 200);
+
+// const eventloops_d = setInterval(() => {
+//     console.log('Event Loops Hello');
+//     console.log(eventloops_c++);
+// }, 200);

@@ -9,14 +9,32 @@
     <meta name="description" content="Javascript interview concepts">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" type="text/css" href="">
-    <script src="./Tamil_Hacks_Youtube_JavascriptInterview.js"></script>
+    <link rel="stylesheet" type="text/css" href="./Tamil_Hacks_Youtube_JavascriptInterview.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/decorative-wall.jpg">
 </head>
 
 <body>
 
     <p>Executing Javascript Interview Concepts</p>
+    <form action="action.php" id="userFormDetails" method="post">
+        <div>
+            <label for="uname">Username</label>
+            <input type="text" name="uname" id="uname" value="" autocomplete="off" required>
+            <br>
+            <br>
+            <label for="upass">Password</label>
+            <input type="password" name="upass" id="upass" value="" autocomplete="off" required>
+            <br>
+            <br>
+            <button>Submit</button>
+            <br>
+            <br>
+        </div>
+        <div id="response"></div>
+    </form>
+
+    <!-- script tag should be before the closing of body tag to see the output of document.getElementById('#id').innerHTML -->
+    <script src="./Tamil_Hacks_Youtube_JavascriptInterview.js"></script>
 
 </body>
 
