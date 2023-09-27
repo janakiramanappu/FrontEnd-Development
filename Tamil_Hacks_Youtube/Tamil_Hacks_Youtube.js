@@ -311,7 +311,7 @@ console.log(bikeModel.reverse());
 
 // Conditional Statements - Ternary Operators
 
-var personAge = 16;
+var personAge = 19;
 if (personAge >= 18) {
     console.log("Yes you can register");
 }
@@ -343,16 +343,16 @@ for (i = 0; i < 10; i++) {
     document.writeln();
 }
 
-// if (personAge >= 18) {
-//     // console.log(personAge+" "+person_Age);
-//     console.log(document.getElementById('displayDataOutput').innerHTML);
-//     // console.log(personAge + " is an age for major after 18");
-// } else {
-//     // console.log(personAge+" "+person_Age);
-//     document.getElementById('displayDataOutput').innerHTML = "e";
-//     //personAge + " is an age for minor before 18";
-//     // console.log(personAge + " is an age for minor before 18");
-// }
+if (personAge >= 18) {
+    // console.log(personAge+" "+person_Age);
+    console.log(document.getElementById('displayDataOutput').innerHTML);
+    // console.log(personAge + " is an age for major after 18");
+} else {
+    // console.log(personAge+" "+person_Age);
+    document.getElementById('displayDataOutput').innerHTML = "e";
+    //personAge + " is an age for minor before 18";
+    // console.log(personAge + " is an age for minor before 18");
+}
 
 // Functions - normal, arrow, high order function (user defined function & built-in function)
 
