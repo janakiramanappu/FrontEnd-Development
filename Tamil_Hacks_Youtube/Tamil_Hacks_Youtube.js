@@ -340,7 +340,9 @@ while (countNum_1 <= 3);
 var i;
 for (i = 0; i < 10; i++) {
     document.write("Print the numbers inside the browser ", i);
-    document.writeln();
+    document.writeln("<br>", "apple");
+    document.write("banana");
+    document.writeln("grapes");
 }
 
 if (personAge >= 18) {
@@ -615,12 +617,15 @@ console.log("My list is", todoMyList);
 todoMyForm.addEventListener('submit', (data) => {
     data.preventDefault();
     console.log(todoMyInput.value);
+    // localStorage.setItem('todolistdata', todoMyInput.value);
     todoCreate(todoMyInput.value);
     todoMyInput.value = '';
     todoMyInput.focus();
 })
 
 todoCreate = (todoInputData) => {
+    // todoInputData = localStorage.getItem('todolistdata');
+    // console.log(todoInputData);
     let todoMyTemplate = `<li>${todoInputData}&ensp;<button id="todoDeleteButton" onclick="todoDelete(this)">Delete</button></li>&nbsp;`;
     todoMyList.insertAdjacentHTML('beforeend', todoMyTemplate);
 }
