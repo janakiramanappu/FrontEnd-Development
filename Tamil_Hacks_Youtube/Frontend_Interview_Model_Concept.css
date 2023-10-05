@@ -1,0 +1,135 @@
+/* body {
+    background: transparent; Make it white if you need
+    color: #fcbe24;
+    padding: 0 24px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+    background-color: rgb(97, 97, 233);
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgb(97, 97, 233);
+    padding: 10px;
+}
+
+#modelBox {
+    display: block;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 10px;
+} */
+
+/* CodeSandBox */
+
+/* body {
+    font-family: sans-serif;
+}
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.openModelButton {
+    background-color: cornflowerblue;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.model {
+    display: flex;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.modelContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+}
+.modelHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modelTitle {
+    margin-right: 0px;
+}
+.modelClose {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.modelBody {
+    margin-top: 10px;
+}
+ */
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.openModelButton {
+    background-color: cornflowerblue;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.model {
+    /* display: flex; */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+.modelContent {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    max-width: 400px;
+}
+.modelHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modelTitle {
+    font-size: 30px;
+    margin-right: 15px;
+}
+.modelClose {
+    font-size: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.modelBodyContent {
+    margin-top: 10px;
+}
