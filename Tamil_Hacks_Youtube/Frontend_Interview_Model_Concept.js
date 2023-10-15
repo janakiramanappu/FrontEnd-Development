@@ -58,3 +58,38 @@ model.addEventListener('click', (event) => {
 //             model.style.display = 'none';
 //         }
 // });
+
+// import "./styles.css";
+
+// document.getElementById("app").innerHTML = `
+// <h1>Hello Vanilla!</h1>
+// <div>
+//   We use the same configuration as Parcel to bundle this sandbox, you can find more
+//   info about Parcel 
+//   <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
+// </div>
+// `;
+// let modelButton = document.querySelector('.modelButton');
+// let model = document.querySelector('.model');
+// let modelClose = document.querySelector('.modelClose');
+
+// modelButton.addEventListener('click', () => {
+//     // console.log('open model is clicked!!');
+//     model.style.display = 'flex';
+// })
+
+// modelClose.addEventListener('click', () => {
+//     // console.log("Model closed is clicked!!");
+//     model.style.display = 'none';
+// })
+
+// model.addEventListener('click', (e) => {
+//     // console.log(e, e.target, e.target.class);
+//     if (e.target === model) {
+//         model.style.display = 'none';
+//     }
+// })
+
+// if (20 === '20') {
+//     console.log('equal');
+// }
