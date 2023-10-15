@@ -1,0 +1,73 @@
+/* body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.stopwatchTimer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#f5f5f5;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.timerDisplay {
+    font-size: 35px;
+    font-display: 100px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.timerButtons {
+    display: flex;
+    gap: 10px;
+}
+button {
+    background-color: cornflowerblue;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 20px;
+} */
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.stopwatchTimer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(204, 204, 204, 0.5);
+    padding: 40px;
+  /* text-align: center; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.timerDisplay {
+    font-display: 64px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.timerButtons {
+    display: flex;
+    gap: 10px;
+}
+button {
+    border: none;
+    background-color: cornflowerblue;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
