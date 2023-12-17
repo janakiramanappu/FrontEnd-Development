@@ -263,7 +263,7 @@ console.log(fn3_scope);             // 9
 
 // console.log(fn4_scope);                  // Uncaught ReferenceError: fn4_scope is not defined
 // console.log(fn5_scope);                  // Uncaught ReferenceError: fn5_scope is not defined
-// console.log(window.fn6_scope);          // Uncaught ReferenceError: fn6_scope is not defined
+// console.log(fn6_scope);                  // Uncaught ReferenceError: fn6_scope is not defined
 
 console.log(window.fn1_scope, this.fn1_scope);      // 7 7
 console.log(window.fn2_scope, this.fn2_scope);      // 8 8
