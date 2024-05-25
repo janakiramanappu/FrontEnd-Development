@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Full Course - Build a Website Tutorial</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="freeCodeCamp">
+    <meta name="description" content="build a website tutorial using html">
+    <meta name="keyword" content="html, css, web development, frontend">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="background-color: lightblue;">
+
+    hello world!!
+
+    <!-- heading tag h1, h2, h3, h4, h5, h6 -->
+    <!-- h1 have big heading and h6 have small heading, 
+    increasing the heading from 1 to 6 will shrink the text size -->
+    <h1 style="color: green;">Build a website</h1>
+
+    <br>
+    <br/>
+
+    <hr>
+
+    <!-- Paragraph tags, text basics formatting tags -->
+    <!-- paragraph default font-size is 16px -->
+    <p style="color: yellow; background-color: blue;">
+        <b>
+            <i>paragraph about webpages</i>
+        </b> which is inside the website
+    </p>
+
+    <p>This
+        <big>is</big>
+        <small>another</small> paragraph
+    </p>
+
+    <p>Maths formula:Algebra is a
+        <sup>2</sup>+b
+        <sup>2</sup>
+    </p>
+
+    <p>Chemical reaction: Water is H
+        <sub>2</sub>O</p>
+
+    <hr/>
+
+    <!-- Proper layout of the webpage with 3 areas - header, main, footer -->
+    <header>
+        <h1></h1>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2></h2>
+            <section>
+                <h3></h3>
+                <aside></aside>
+            </section>
+            <section>
+                <h3></h3>
+            </section>
+        </article>
+    </main>
+    <footer></footer>
+
+    <!-- Links -->
+    <a href="https://www.google.com" target="_blank">
+        <h1>Google's
+            <b>
+                <i>HomePage</i>
+            </b>
+        </h1>
+    </a>
+    <a href="htmlBegineerCourseDaveGray.html">DaveGray HTML Course</a>
+    <a href="./htmlBegineerCourseAboutDaveGray.html">About DaveGray</a>
+    <a href="/SampleExercise.html">Sample Exercise</a>
+    <a href="../Geeks_for_Geeks_website/Landing_Page.html">Landing Page</a>
+    <a href="/assets/images/sunrise.jpg">Sunrise Image</a>
+
+    <hr>
+
+    <!-- Images -->
+    <!-- setting up only either width or height, then it will automatically resize the other attribute -->
+    <!-- original aspect ratio of the vacation image 3000x4000, width as 3000 and height as 4000 -->
+    <img src="../assets/images/vacation.jpg" alt="vacation on the beach" height="250" />
+    <!-- width as 187.500 -->
+    <br>
+    <br>
+    <img src="/assets/images/vacation.jpg" alt="beach on vacation" width="200">
+    <!-- height as 266.656 -->
+    <br>
+    <br>
+    <img src="../assets/images/vacation.jpg" alt="Beach Vacation" width="100" height="133" />
+    <!-- height as 133.328 -->
+
+    <hr>
+    <!-- Combine image with link tag -->
+    <a href="https://www.google.com" target="blank">
+        <img src="/assets/images/moon.jpg" alt="Moon shine" width="300" height="469">
+    </a>
+
+    <hr>
+
+    <!-- videos and youtube iframes -->
+    <video src="../assets/video/galaxies.mp4" width="500" controls autoplay loop muted poster="/assets/images/sunrise.jpg"></video>
+    <iframe width="" height="" src="" frameborder="" allowfullscreen></iframe>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg?si=cXwdpJliIgmy7I6U" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe> -->
+    <iframe src="" frameborder="1" width="100" height="80">Sorry can't use it!!</iframe>
+
+    <hr>
+
+    <!-- Lists -->
+    <ul>
+        <li>Apples</li>
+        <li>Mangoes</li>
+        <li>Bananas</li>
+    </ul>
+
+    <ul>
+        <li>
+            <a href="#">Oranges</a>
+        </li>
+        <li>
+            <a href="#">Pineapple</a>
+        </li>
+        <li>
+            <a href="#">Guava</a>
+        </li>
+    </ul>
+
+    <ol>
+        <li>Take water</li>
+        <li>pour into bowl</li>
+        <li>heat it</li>
+    </ol>
+
+    <ol>
+        <li>
+            <a href="#">Pick vegetables</a>
+        </li>
+        <li>
+            <a href="#">wash it</a>
+        </li>
+        <li>
+            <a href="#">use it for cooking</a>
+        </li>
+    </ol>
+
+    <ol type="a">
+        <!-- ordered list have type attribute have different values like 1, a, A, i, I -->
+        <li>Alex</li>
+        <li>Barry</li>
+        <li>Charles</li>
+    </ol>
+
+    <ol type="i">
+        <li>Pongal
+            <ul>
+                <li>Sweet Pongal</li>
+                <li>Venn Pongal</li>
+            </ul>
+        </li>
+        <li>Diwali
+            <ul>
+                <li>Sweets</li>
+                <li>Crackers</li>
+            </ul>
+        </li>
+        <li>New Year
+            <ul>
+                <li>Celebrations</li>
+            </ul>
+        </li>
+    </ol>
+
+    <dl>
+        <dt>Apples</dt>
+        <dd>- They are red</dd>
+        <dt>Oranges</dt>
+        <dd>- They are orange</dd>
+    </dl>
+
+    <hr>
+
+    <!-- tables -->
+    <table>
+        <thead>
+            <caption>
+                <h2>List of Numbers</h2>
+            </caption>
+            <tr>
+                <th>Num1</th>
+                <th>Num2</th>
+                <th colspan="2">Num3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>One</td>
+                <td>Two</td>
+                <td>Three</td>
+                <td>Three and a half</td>
+            </tr>
+            <tr>
+                <td>Four</td>
+                <td>Five</td>
+                <td>Six</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- container tags like block and inline elements -->
+    <!-- anchor tag alias links tag it is an inline elements -->
+    <!-- paragragh tag is a block elements -->
+    <!-- span is an inline element and div is a block element -->
+    <a href="#">Google Links1</a>
+    <a href="#">Bing Links2</a>
+
+    <p>Paragraph1</p>
+    <p>Paragraph2</p>
+
+    <span>Span1</span>
+    <span>Span2</span>
+
+    <div>Div1</div>
+    <div>Div2</div>
+
+    <hr>
+
+    <!-- Input tags inside forms -->
+    <!-- for more input tage refer w3schools.com website -->
+    <form>
+        <input type="submit" />
+    </form>
+    <form>
+        <p>
+            <input type="text" value="Enter your username" />
+        </p>
+        <p>
+            <input type="password" placeholder="Please enter your password" />
+        </p>
+        <p>
+            <textarea cols="30" rows="10">
+                Enter a paragraph
+            </textarea>
+        </p>
+        <p>
+            <input type="date">
+        </p>
+        <p>
+            <input type="email" value="Type email">
+        </p>
+        <p>
+            <input type="range">
+        </p>
+        <p>
+            <input type="file">
+        </p>
+        <p>
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+        </p>
+        <p>
+            <input type="radio" name="btn">
+            <input type="radio" name="btn">
+            <input type="radio" name="btn">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+        <p>
+            <input type="reset">
+        </p>
+    </form>
+
+    <hr>
+
+</body>
+
+</html>
