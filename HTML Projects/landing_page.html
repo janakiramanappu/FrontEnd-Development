@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John">
+    <meta name="keywords" content="landing page, html, frontend, web development">
+    <meta name="description" content="landing page - a single webpage using html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Landing Page - Cricket</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cricket</h1>
+        <p>Cricket is a bat-and-ball game that is played between two teams of eleven players on a field at the centre of which
+            is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps.
+            Two players from the batting team (the striker and nonstriker) stand in front of either wicket, with one player
+            from the fielding team (the bowler) bowling the ball towards the striker's wicket from the opposite end of the
+            pitch. The striker's goal is to hit the bowled ball and then switch places with the nonstriker, with the batting
+            team scoring one run for each exchange. Runs are also scored when the ball reaches or crosses the boundary of
+            the field or when the ball is bowled illegally.
+        </p>
+        <span>Forms of Cricket</span>
+        <nav>
+            <ul>
+                <li>Test Cricket</li>
+                <li>First-Class Cricket</li>
+                <li>One Day International</li>
+                <li>Limited Overs (Domestic)</li>
+                <li>Twenty20 International</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section>
+                <figure>
+                    <img src="/assets/images/cricket bat and ball.jpg" alt="Cricket bat and ball" title="Bat and Ball" width="300" height="300"
+                        loading="lazy">
+                    <figcaption>Cricket Ground with a Bat and Ball</figcaption>
+                </figure>
+            </section>
+            <section>
+                <aside>
+                    <details>
+                        <summary>Instructions</summary>
+                        <p>Cricket is played between two teams each made up of eleven players. (Sometime in junior competitions
+                            you will find 8 player teams). Games comprise of at least one innings where each team will take
+                            turns in batting and fielding/bowling. The fielding team will have a bowler bowl the ball to
+                            the batsman who tries to hit the ball with their bat.</p>
+                    </details>
+                </aside>
+            </section>
+            <hr />
+            <section>
+                <form method="POST" action="https://httpbin.org/post">
+                    <fieldset>
+                        <legend>Select the Cricket Mode of Choice</legend>
+                        <input type="checkbox" name="cricketMode" id="batsmen" value="batsmen">
+                        <label for="batsmen">Batsmen</label>
+                        <input type="checkbox" name="cricketMode" id="bowler" value="bowler">
+                        <label for="bowler">Bowler</label>
+                        <input type="checkbox" name="cricketMode" id="all-rounder" value="all-rounder">
+                        <label for="all-rounder">All Rounder</label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Batting Types</legend>
+                        <input type="radio" name="batType" id="righthandbat" value="righthandbat">
+                        <label for="righthandbat">Right Hand Batsmen</label>
+                        <input type="radio" name="batType" id="lefthandbat" value="lefthandbat">
+                        <label for="lefthandbat">Left Hand Batsmen</label>
+                        <input type="radio" name="batType" id="notabat" value="notabat">
+                        <label for="notabat">Not a Batsmen</label>
+                    </fieldset>
+                    <br />
+                    <fieldset>
+                        <legend>Bowling Types</legend>
+                        <input type="radio" name="bowlType" id="righthandbowl" value="righthandbowl">
+                        <label for="righthandbowl">Right Hand Bowler</label>
+                        <input type="radio" name="bowlType" id="lefthandbowl" value="lefthandbowl">
+                        <label for="lefthandbowl">Left Hand Bowler</label>
+                        <input type="radio" name="bowlType" id="notabowl" value="notabowl">
+                        <label for="notabowl">Not a Bowler</label>
+                    </fieldset>
+                    <br>
+                    <label for="bowlOption">Bowling Options</label>
+                    <select id="bowlOption" name="bowlOption" multiple size="3">
+                        <optgroup label="Fast">
+                            <option value="seam">Seam</option>
+                            <option value="swing">Swing</option>
+                        </optgroup>
+                        <optgroup label="Spin">
+                            <option value="finger" selected>Finger</option>
+                            <option value="wrist">Wrist</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="award">Awards</label>
+                    <input type="text" name="award" id="award" list="presentedAward">
+                    <datalist id="presentedAward">
+                        <option value="Man of the match"></option>
+                        <option value="Man of the tournment"></option>
+                        <option value="Most Runs"></option>
+                        <option value="Highest Scores"></option>
+                        <option value="Most Wickets"></option>
+                    </datalist>
+                    <br>
+                    <br>
+                    <button type="submit">Finalize Your Choice</button>
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Copyright &copy; Cricket</p>
+    </footer>
+</body>
+
+</html>
