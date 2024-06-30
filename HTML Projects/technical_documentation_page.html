@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Johnny">
+    <meta name="description" content="webpage about the technical documentation">
+    <meta name="keywords" content="web development, front-end, html, technical documentation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Technical Documentation Page - HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1>HTML - Hyper Text Markup Language</h1>
+        <p>HTML is a markup language which is a skeleton of a webpage. Used for creating web pages. Collection of web pages
+            is called Websites. It consists of series of elements. Tells the browser how to display the content. HTML element
+            consists of start tag, content, end tag.</p>
+        <span>HTML Elements includes
+            <code>&lt;tagname&gt;Content&lt;/tagname&gt;</code> where
+            <code>&lt;tagname&gt;</code> is start tag
+            <code>&lt;/tagname&gt;</code> is end tag
+        </span>
+        <br>
+        <br>
+        <span>Sample Code is</span>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;HTML Code Structure&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Heading&lt;/h1&gt;
+                    &lt;p&gt;Paragraph&lt;/p&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#intro">Introduction</a>
+                </li>
+                <li>
+                    <a href="#element">Elements and Structure - Tags and Attributes</a>
+                </li>
+                <li>
+                    <a href="#table">Tables</a>
+                </li>
+                <li>
+                    <a href="#form">Forms</a>
+                </li>
+                <li>
+                    <a href="#semantic">Semantic HTML</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <article>
+            <h2>Impotant Topics to cover</h2>
+            <section>
+                <h3 id="intro">Introduction</h3>
+                <blockquote>HTML is the standard markup language for creating Web pages.HTML is the language in which most websites are
+                    written. HTML is used to create pages and make them functional.Hypertext means that the document contains
+                    links that allow the reader to jump to other places in the document or to another document altogether.
+                    The latest version is known as HTML5. A Markup Language is a way that computers speak to each other to
+                    control how text is processed and presented. To do this HTML uses two things: tags and attributes.</blockquote>
+                <p></p>
+            </section>
+            <hr>
+            <section>
+                <h3 id="element">Elements and Structure - Tags and Attributes</h3>
+                <p>Tags and attributes are the basis of HTML. They work together but perform different functions – it is worth
+                    investing 2 minutes in differentiating the two. Tags are used to mark up the start of an HTML element
+                    and they are usually enclosed in angle brackets. An example of a tag is: &lt;h1&gt;. Most tags must be
+                    opened &lt;h1&gt; and closed &lt;/h1&gt; in order to function.contain additional pieces of information.
+                    Attributes take the form of an opening tag and additional info is placed inside. An example of an attribute
+                    is:
+                    <pre>
+                        &lt;img src="mydog.jpg" alt="A photo of my dog."&gt;
+                    </pre> In this instance, the image source (src) and the alt text (alt) are attributes of the &lt;img&gt; tag.
+                </p>
+            </section>
+            <hr>
+            <section>
+                <h3 id="table">Tables</h3>
+                <table border="1" cellpadding="10" cellspacing="5">
+                    <caption>Food Diet</caption>
+                    <colgroup>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <tr>
+                        <th>Morning</th>
+                        <th>Afternoon</th>
+                        <th>Evening</th>
+                        <th>Night</th>
+                    </tr>
+                    <tr>
+                        <td>Eggs and Bread</td>
+                        <td>Rice with vegetables</td>
+                        <td>Fresh Juice</td>
+                        <td>Chappati with dal</td>
+                    </tr>
+                    <tr>
+                        <td>Salads</td>
+                        <td>Curry Rice</td>
+                        <td>Fruits</td>
+                        <td>Vegies alot</td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+            <section>
+                <h3 id="form">Forms</h3>
+                <form>
+                    <fieldset>
+                        <legend>About Author</legend>
+                        <p>
+                            <label for="authorName">Name:</label>
+                            <input type="text" name="authorName" value="Harry">
+                        </p>
+                        <p>
+                            <label for="authorEmail">Email me:</label>
+                            <input type="email" name="authorEmail" value="harryAuthor@yahoo.com">
+                        </p>
+                        <p>
+                            <label for="authorContact">Contact:</label>
+                            <input type="tel" name="authorContact" value="3214567890">
+                        </p>
+                    </fieldset>
+                </form>
+            </section>
+            <hr>
+            <section>
+                <h3 id="semantic">Semantic HTML</h3>
+                <figure>
+                    <img src="/assets/images/HTML5favicon.png" alt="html5 logo" height="100">
+                    <figcaption>HTML5</figcaption>
+                </figure>
+                <aside>
+                    <p>Semantic markup that allows you to construct pages so that their structure reveals their content. This
+                        is especially useful as search engines become more and more advanced — allowing them to find users
+                        the right information they are looking for.
+                    </p>
+                </aside>
+                <details>
+                    <summary>Special about HTML5</summary>
+                    <p>Here’s a list of Top 12 HTML5 Features, which are explained in detail below:
+                        <ol>
+                            <li>Semantic Elements</li>
+                            <li>Audio and Video Support</li>
+                            <li>Canvas Elements</li>
+                            <li>Geolocation API</li>
+                            <li>Local Storage</li>
+                            <li>Responsive Images</li>
+                            <li>Web Workers</li>
+                            <li>Drag and Drop API</li>
+                            <li>Form Enhancements</li>
+                            <li>Web Sockets</li>
+                            <li>Micro Data</li>
+                            <li>Cross Document Messaging</li>
+                        </ol>
+                    </p>
+                </details>
+            </section>
+            <hr>
+        </article>
+    </main>
+    <footer>
+        <span>
+            <strong>Contact Details:</strong>
+        </span>
+        <address>
+            No:10, Vijay Nagar,
+            <br>Ganesh Street
+            <br>Kumuli
+            <br>Tamilnadu-600000
+            <br>PhoneNo:9123456789
+        </address>
+        <p>&copy; Technical HTML Document. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
