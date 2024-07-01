@@ -79,20 +79,22 @@
                     opened &lt;h1&gt; and closed &lt;/h1&gt; in order to function.contain additional pieces of information.
                     Attributes take the form of an opening tag and additional info is placed inside. An example of an attribute
                     is:
-                    <pre>
-                        &lt;img src="mydog.jpg" alt="A photo of my dog."&gt;
-                    </pre> In this instance, the image source (src) and the alt text (alt) are attributes of the &lt;img&gt; tag.
                 </p>
+                <pre>
+                    &lt;img src="mydog.jpg" alt="A photo of my dog."&gt;
+                </pre>
+                <p>In this instance, the image source (src) and the alt text (alt) are attributes of the &lt;img&gt; tag.</p>
             </section>
             <hr>
             <section>
                 <h3 id="table">Tables</h3>
-                <table border="1" cellpadding="10" cellspacing="5">
+                <table>
+                    <!-- <table border="1" cellpadding="10" cellspacing="5"> -->
                     <caption>Food Diet</caption>
-                    <colgroup>
+                    <!-- <colgroup>
                         <col>
                         <col>
-                    </colgroup>
+                    </colgroup> -->
                     <tr>
                         <th>Morning</th>
                         <th>Afternoon</th>
@@ -121,15 +123,15 @@
                         <legend>About Author</legend>
                         <p>
                             <label for="authorName">Name:</label>
-                            <input type="text" name="authorName" value="Harry">
+                            <input type="text" id="authorName" name="authorName" value="Harry">
                         </p>
                         <p>
                             <label for="authorEmail">Email me:</label>
-                            <input type="email" name="authorEmail" value="harryAuthor@yahoo.com">
+                            <input type="email" id="authorEmail" name="authorEmail" value="harryAuthor@yahoo.com">
                         </p>
                         <p>
                             <label for="authorContact">Contact:</label>
-                            <input type="tel" name="authorContact" value="3214567890">
+                            <input type="tel" id="authorContact" name="authorContact" value="3214567890">
                         </p>
                     </fieldset>
                 </form>
@@ -149,21 +151,9 @@
                 </aside>
                 <details>
                     <summary>Special about HTML5</summary>
-                    <p>Here’s a list of Top 12 HTML5 Features, which are explained in detail below:
-                        <ol>
-                            <li>Semantic Elements</li>
-                            <li>Audio and Video Support</li>
-                            <li>Canvas Elements</li>
-                            <li>Geolocation API</li>
-                            <li>Local Storage</li>
-                            <li>Responsive Images</li>
-                            <li>Web Workers</li>
-                            <li>Drag and Drop API</li>
-                            <li>Form Enhancements</li>
-                            <li>Web Sockets</li>
-                            <li>Micro Data</li>
-                            <li>Cross Document Messaging</li>
-                        </ol>
+                    <p>Here’s a list of Top 12 HTML5 Features, which are explained in detail below: Semantic Elements, Audio
+                        and Video Support, Canvas Elements, Geolocation API, Local Storage, Responsive Images, Web Workers,
+                        Drag and Drop API, Form Enhancements, Web Sockets, Micro Data, Cross Document Messaging
                     </p>
                 </details>
             </section>
