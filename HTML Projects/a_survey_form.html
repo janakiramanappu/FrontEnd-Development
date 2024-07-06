@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John">
+    <meta name="description" content="webpage about the survey form">
+    <meta name="keywords" content="web-development, front-end, html, survey form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Survey Form</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Let us know how to improve the coding service</h2>
+            <form action="https://httpbin.org/post" method="POST">
+                <fieldset>
+                    <legend>Fill up the required details</legend>
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p> PickUp a Category:
+                        <label for="student">
+                            <input type="radio" name="personType" id="student">Student
+                        </label>
+                        <label for="working_professional">
+                            <input type="radio" name="personType" id="working_professional">Working Professional
+                        </label>
+                    </p>
+                    <p>
+                        <label for="courses">Select the course you needed!!</label>
+                        <select id="courses" multiple>
+                            <optgroup label="FrontEnd">
+                                <option value="Javascript">JavaScript</option>
+                                <option value="Angular">Angular</option>
+                                <option value="React">React</option>
+                            </optgroup>
+                            <optgroup label="BackEnd">
+                                <option value="Java">Java</option>
+                                <option value="Golang">Golang</option>
+                                <option value="Python">Python</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>Choose your Mentor:
+                        <label for="amazon">
+                            <input type="checkbox" name="mentor" id="amazon">Amazon
+                        </label>
+                        <label for="microsoft">
+                            <input type="checkbox" name="mentor" id="microsoft">Microsoft
+                        </label>
+                        <label for="google">
+                            <input type="checkbox" name="mentor" id="google">Google
+                        </label>
+                    </p>
+                    <p> Duration:
+                        <input type="text" name="duration" id="duration" list="plan" placeholder="Select duration plan">
+                        <datalist id="plan">
+                            <option value="6 months plan"></option>
+                            <option value="1 year plan"></option>
+                            <option value="2 year plan"></option>
+                            <option value="3 year plan"></option>
+                            <option value="4 year plan"></option>
+                        </datalist>
+                    </p>
+                    <p>
+                        <button type="submit">Send details</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 by John. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
